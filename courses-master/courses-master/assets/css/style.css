@@ -2825,7 +2825,7 @@ hr {
     text-transform: capitalize
 }
 
-.main-header .main-menu ul li:hover>a {
+.main-header .main-menu ul li:hover>a { 
     color: #fff
 }
 
