@@ -28,7 +28,8 @@
 	<!-- navbar  -->
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>Study</span>Lab</a>
+			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
+				style="background-image: url('images/logo.png'); height: 90x; width: 90px;"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -66,23 +67,24 @@
 					</div>
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">My progress</h3>
-						<div class="pie animate no-round" style="--p:80;--c:orange;"> 80%</div>
-						<!-- <div class="pie"></div>
-							<div id="legenda">
-							  <div class="entry">
-								<div style="color: yellow;" class="entry-color"></div>
-								<div class="entry-text">Attempted</div>
-							  </div>
-							  <div class="entry">
-								<div style="color: red;" class="entry-color"></div>
-								<div class="entry-text">Solved</div>
-							  </div>
-							  <div class="entry">
-								<div style="color: purple;" class="entry-color"></div>
-								<div class="entry-text">Correct</div>
-							  </div>
-						  </div> -->
-						  </div>
+						<div class="pie animate" style="--p:90;--c:yellow"> 90%</div>
+						<div id="legenda">
+							<div class="entry">
+								<div class="entry-text">Attempted <span id="color-yellow" class="entry-text"> ■</span>
+								</div>
+								<!-- <div id="color-yellow" class="entry-color"> ■ </div> -->
+							</div>
+							<div class="entry">
+								<div id="color-red" class="entry-color"> </div>
+								<div class="entry-text">Solved <span id="color-red" class="entry-text"> ■</span></div>
+							</div>
+							<div class="entry">
+								<div id="color-purple" class="entry-color"></div>
+								<div class="entry-text">Correct <span id="color-purple" class="entry-text"> ■</span>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">Course Instructor</h3>
 						<form action="#" class="browse-form">
