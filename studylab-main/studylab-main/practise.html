@@ -22,6 +22,7 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/course_card.css">
 </head>
 
 <body>
@@ -72,20 +73,20 @@
 							<div class="entry">
 								<div class="entry-text">Attempted <span id="color-yellow" class="entry-text"> ■</span>
 								</div>
-								<!-- <div id="color-yellow" class="entry-color"> ■ </div> -->
+								<!-- <div id="color-yellow" class="entry-color"></div> -->
 							</div>
 							<div class="entry">
-								<div id="color-red" class="entry-color"> </div>
+								<!-- <div id="color-red" class="entry-color"> </div> -->
 								<div class="entry-text">Solved <span id="color-red" class="entry-text"> ■</span></div>
 							</div>
 							<div class="entry">
-								<div id="color-purple" class="entry-color"></div>
+								<!-- <div id="color-purple" class="entry-color"></div> -->
 								<div class="entry-text">Correct <span id="color-purple" class="entry-text"> ■</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="sidebar-box bg-white p-4 ftco-animate">
+					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">Course Instructor</h3>
 						<form action="#" class="browse-form">
 							<label for="option-instructor-1"><input type="checkbox" id="option-instructor-1"
@@ -101,7 +102,7 @@
 							<label for="option-instructor-6"><input type="checkbox" id="option-instructor-6"
 									name="vehicle" value=""> Harry Potter</label><br>
 						</form>
-					</div>
+					</div> -->
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<section class="ftco-intro">
 							<div class="row justify-content-center">
@@ -130,7 +131,7 @@
 						</form>
 					</div>
 
-					<div class="sidebar-box bg-white p-4 ftco-animate">
+					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">Software</h3>
 						<form action="#" class="browse-form">
 							<label for="option-software-1"><input type="checkbox" id="option-software-1" name="vehicle"
@@ -144,7 +145,7 @@
 							<label for="option-software-5"><input type="checkbox" id="option-software-5" name="vehicle"
 									value=""> HTML &amp; CSS</label><br>
 						</form>
-					</div>
+					</div> -->
 				</div>
 				<!-- End of Sidebar -->
 
@@ -154,7 +155,6 @@
 				<div class="col-lg-9">
 					<div class="project-wrap">
 						<section class="ftco-intro">
-							<!-- <div class="container"> -->
 							<div class="row justify-content-center">
 								<div class="col-md-12 text-center">
 									<div class="img" style="background-image: url(images/bg_4.jpg);">
@@ -167,7 +167,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- </div> -->
 						</section>
 					</div>
 					<!--End of Career roadmap -->
@@ -220,34 +219,48 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 d-flex align-items-stretch ftco-animate">
-							<div class="project-wrap">
-								<a href="#" class="img" style="background-image: url(images/work-3.webp);">
-								</a>
-								<div class="text p-4">
-									<h3><a href="#">Java</a></h3>
-									<p class="advisor">Advisor <span>Asma Sheikh</span></p>
-									<ul class="d-flex justify-content-between">
-										<li><span class="flaticon-shower"></span>18 Modules</li>
-										<li class="price">Free</li>
-									</ul>
+						<section class="container1">
+							<section class="card1">
+								<div class="product-image">
+									<img src="images/work-3.png" alt="OFF-white Red Edition" draggable="false" />
 								</div>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex align-items-stretch ftco-animate">
-							<div class="project-wrap">
-								<a href="#" class="img" style="background-image: url(images/work-2.webp);">
-								</a>
-								<div class="text p-4">
-									<h3><a href="#">Python</a></h3>
-									<p class="advisor">Advisor <span>Avinash Badgu</span></p>
-									<ul class="d-flex justify-content-between">
-										<li><span class="flaticon-shower"></span>10 modules</li>
-										<li class="price">Free</li>
-									</ul>
+								<div class="product-info">
+									<h2>Java</h2>
+									<p>Advisor - Asma Sheikh</p>
+									<div class="price">18 modules</div>
 								</div>
-							</div>
-						</div>
+								<div class="btn">
+									<button class="buy-btn">Start Now</button>
+									<button class="fav">
+										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2">
+											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+										</svg>
+									</button>
+								</div>
+							</section>
+							<section class="card1 card-blue">
+								<div class="product-image">
+									<img src="images/work-2.png" alt="OFF-white Blue Edition" draggable="false" />
+								</div>
+								<div class="product-info">
+									<h2>Python</h2>
+									<p>Advisor - Avinash Badgu</p>
+									<div class="price">10 modules</div>
+								</div>
+								<div class="btn">
+									<button class="buy-btn">Start Now</button>
+									<button class="fav">
+										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2">
+											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+										</svg>
+									</button>
+								</div>
+							</section>
+						</section>
 					</div>
 					<!-- End of Text based courses -->
 
@@ -255,7 +268,7 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-md-12 text-center">
-								<div class="img" style="background-image: url(images/bg_2.jpg);">
+								<div class="img" style="background-image: url(images/bg_2.webp);">
 									<div class="overlay"></div>
 									<h2>BMCC Advertisement</h2>
 									<p>Start your BCA career with us</p>
