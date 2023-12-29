@@ -1,5 +1,3 @@
-
-
 <?php
     session_start();
     if (isset($_SESSION['SESSION_EMAIL'])) {
@@ -70,17 +68,14 @@
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form">
-        <div class="container">
+    <section class="w3l-mockup-form" style=" background-image: url('images/background.png'); object-fit:contain;">
+        <div class="container" >
             <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
-                    <div class="alert-close">
-                        <span class="fa fa-close"></span>
-                    </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="images/signin-image.jpg" alt="">
+                            <img src="images/login.jpg" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
@@ -91,7 +86,7 @@
                             <input type="email" class="email" name="email" placeholder="Enter Your Email" required>
                             <input type="password" class="password" name="password" placeholder="Enter Your Password" style="margin-bottom: 2px;" required>
                             <p><a href="forgot-password.php" style="margin-bottom: 15px; display: block; text-align: right;">Forgot Password?</a></p>
-                            <button name="submit" name="submit" class="btn" type="submit">Login</button>
+                            <button name="submit" name="submit" style="background-color: purple;" class="btn" type="submit">Login</button>
                         </form>
                         <div class="social-icons">
                             <p>Create Account! <a href="register.php">Register</a>.</p>
