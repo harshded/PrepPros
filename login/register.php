@@ -1,5 +1,3 @@
-
-
 <?php
     //Import PHPMailer classes into the global namespace
     //These must be at the top of your script, not inside a function
@@ -83,8 +81,7 @@
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords"
-        content="Login Form" />
+    <meta name="keywords" content="Login Form" />
     <!-- //Meta tag Keywords -->
 
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -100,17 +97,14 @@
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form">
+    <section class="w3l-mockup-form" style=" background-image: url('images/background.png'); object-fit:contain;">
         <div class="container">
             <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
-                    <div class="alert-close">
-                        <span class="fa fa-close"></span>
-                    </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="images/signup-image.jpg" alt="">
+                            <img src="images/signup.jpg" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
@@ -118,29 +112,34 @@
                         <p>welcome to prepros </p>
                         <?php echo $msg; ?>
                         <form action="" method="post">
-                            <input type="text" class="name" name="name" placeholder="Enter Your Name" value="<?php if (isset($_POST['submit'])) { echo $name; } ?>" required>
-                            <input type="email" class="email" name="email" placeholder="Enter Your Email" value="<?php if (isset($_POST['submit'])) { echo $email; } ?>" required>
-                            <input type="password" class="password" name="password" placeholder="Enter Your Password" required>
-                            <input type="password" class="confirm-password" name="confirm-password" placeholder="Enter Your Confirm Password" required>
+                            <input type="text" class="name" name="name" placeholder="Enter Your Name"
+                                value="<?php if (isset($_POST['submit'])) { echo $name; } ?>" required>
+                            <input type="email" class="email" name="email" placeholder="Enter Your Email"
+                                value="<?php if (isset($_POST['submit'])) { echo $email; } ?>" required>
+                            <input type="password" class="password" name="password" placeholder="Enter Your Password"
+                                required>
+                            <input type="password" class="confirm-password" name="confirm-password"
+                                placeholder="Enter Your Confirm Password" required>
                             <div class="g-recaptcha" data-sitekey="6Lc4PDopAAAAAFpKh0WM9AqqxlMpARD4XOsE2l-2"></div>
-                            <button name="submit" class="btn" type="submit">Register</button>
+                            <button name="submit" class="btn" style="background-color: purple;"
+                                type="submit">Register</button>
                         </form>
                         <div class="social-icons">
                             <p>Have an account! <a href="index.php">Login</a>.</p>
                         </div>
                         <div class="social-icons">
-                                <p>Register with: 
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-google"></i>
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-facebook"></i>
-                                    </a>
-                                </p>
-                            </div>
+                            <p>Register with:
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

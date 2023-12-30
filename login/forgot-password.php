@@ -92,17 +92,14 @@ if (isset($_POST['submit'])) {
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form">
+    <section class="w3l-mockup-form" style=" background-image: url('images/background.png'); object-fit:contain;">
         <div class="container">
             <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
-                    <div class="alert-close">
-                        <span class="fa fa-close"></span>
-                    </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="images/image3.svg" alt="">
+                            <img src="images/signup.jpg" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
@@ -111,7 +108,7 @@ if (isset($_POST['submit'])) {
                         <?php echo $msg; ?>
                         <form action="" method="post">
                             <input type="email" class="email" name="email" placeholder="Enter Your Email" required>
-                            <button name="submit" class="btn" type="submit">Send Reset Link</button>
+                            <button name="submit" class="btn" type="submit" style="background-color: purple;">Send Reset Link</button>
                         </form>
                         <div class="social-icons">
                             <p>Back to! <a href="index.php">Login</a>.</p>
