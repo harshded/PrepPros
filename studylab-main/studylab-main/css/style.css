@@ -578,6 +578,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container1 {
+  width: 70%;
+  /* padding-right:auto; */
+  padding-left: 65px;
+  margin-right:160px;
+  margin-left: auto;
+}
 
 @media (min-width: 576px) {
   .container {
@@ -661,6 +668,19 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.sidebar1 {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  position: fixed;
+  z-index: 1;
+  width: 20%;
+  /* -ms-flex-wrap: wrap; */
+  flex-wrap: wrap;
+  /* margin-right: 5px; */
+  margin-left: 10px;
 }
 
 .no-gutters {
@@ -1718,6 +1738,14 @@ pre code {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
+  }
+
+  .col-lg-9-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    margin-left: auto;
   }
 
   .col-lg-10 {
@@ -12148,6 +12176,7 @@ h5,
 .ftco-navbar-light1 {
   background: linear-gradient(rgb(192, 84, 255) 0%, rgb(207, 159, 255) 100%) !important;
   position: absolute;
+  height: 12%;
   top: -8px;
   left: 0;
   right: 0;
