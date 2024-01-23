@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Java Course</title>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="col-lg-9-1">
+        <h1 class="mt-md-3" style="text-align: center;font-weight: bold;">
+            <span class="mt-md-3">Packages in Java</span>
+        </h1>
+        <div class="col-md-12 d-flex align-items-stretch">
+            <div class="project-wrap" style="color: black;">
+                <div class="col-md-12 heading-section pr-md-5 d-flex align-items-center">
+                    <div class="w-100 mb-4 mb-md-0">
+                        <p>A package in Java is a mechanism to encapsulate a group of classes, sub packages, and
+                            interfaces. Packages are used for:</p>
+
+                        <ul>
+                            <li>Preventing naming conflicts.</li>
+                            <li>Making searching and usage of classes easier.</li>
+                            <li>Providing controlled access.</li>
+                            <li>Data encapsulation (or data-hiding).</li>
+                        </ul>
+
+                        <p>How packages work:</p>
+                        <ul>
+                            <li><strong>Package Names and Directory Structure:</strong> Package names and directory
+                                structure are closely related. For example, if a package name is college.staff.cse, then
+                                there are three directories: college, staff, and cse. cse is present in staff, and staff
+                                is present inside college. The directory college is accessible through the CLASSPATH
+                                variable, ensuring easy class location.</li>
+
+                            <li><strong>Package Naming Conventions:</strong> Packages are named in reverse order of
+                                domain names, e.g., org.geeksforgeeks.practice. In a college, the recommended convention
+                                is college.tech.cse, college.tech.ee, college.art.history, etc.</li>
+
+                            <li><strong>Adding a Class to a Package:</strong> More classes can be added to a created
+                                package by using the package name at the top of the program and saving it in the package
+                                directory. A new Java file is needed to define a public class, or the new class can be
+                                added to an existing .java file and recompiled.</li>
+
+                            <li><strong>Subpackages:</strong> Packages inside another package are subpackages. They are
+                                not imported by default and must be explicitly imported. Members of a subpackage have no
+                                access privileges; they are considered a different package for protected and default
+                                access specifiers.</li>
+                        </ul>
+                        Example:
+
+                        <code>import java.util.*;</code>
+
+                        <p><strong>util</strong> is a subpackage created inside the <strong>java</strong>.</p>
+
+                        <p><strong>Accessing classes inside a package:</strong></p>
+                        <!-- <code> -->
+                        <pre class="code1">
+                        // import the Vector class from util package.
+                        import java.util.Vector;
+
+                        // import all the classes from util package
+                        import java.util.*;
+
+                        // All the classes and interfaces of this package
+                        // will be accessible but not subpackages.
+                        import package.*;
+
+                        // Only mentioned class of this package will be accessible.
+                        import package.classname;
+
+                        // Class name is generally used when two packages have
+                        // the same class name. For example, in the below code, both packages have
+                        // the date class, so using a fully qualified name to avoid conflict
+                        import java.util.Date;
+                        import my.package.Date;
+
+                        // Java program to demonstrate accessing of members when
+                        // corresponding classes are imported and not imported.
+                        import java.util.Vector;
+
+                        public class ImportDemo {
+                            public ImportDemo() {
+                                // java.util.Vector is imported; hence, we are
+                                // able to access directly in our code.
+                                Vector newVector = new Vector();
+
+                                // java.util.ArrayList is not imported; hence
+                                // we were referring to it using the complete
+                                // package.
+                                java.util.ArrayList newList = new java.util.ArrayList();
+                            }
+
+                            public static void main(String arg[]) {
+                                new ImportDemo();
+                            }
+                        }
+                        </pre>
+                       <!-- </code> -->
+
+                        <h2>Types of Packages</h2>
+                        <img class="hero-wrap" src="images/java-4.png">
+                        <ol>
+                            <li><strong>Built-in Packages:</strong> These packages consist of a large number of classes
+                                which are a part of Java API. Some commonly used built-in packages include:</li><br>
+                                <ul>
+                                    <li><strong>java.lang:</strong> Contains language support classes(e.g classed which defines primitive data types, math operations). This package is automatically imported.</li>
+        
+                                    <li><strong>java.io: </strong> Contains classed for supporting input / output operations.</li>
+        
+                                    <li><strong> java.util:</strong> Contains utility classes which implement data structures like Linked List, Dictionary and support ; for Date / Time operations.</li>
+        
+                                    <li><strong>java.applet: </strong> Contains classes for creating Applets.</li>
+                                    
+                                    <li><strong> java.awt: </strong> Contain classes for implementing the components for graphical user interfaces (like button ,menus etc).</li>
+                                    
+                                    <li><strong>  java.net: </strong> Contain classes for supporting networking operations.</li>
+                                </ul><br>
+                            <li><strong>User-defined Packages:</strong> These are packages defined by the user. Example:
+                            </li>
+                            <p>These are the packages that are defined by the user. First we create a directory <strong>myPackage</strong> (name should be same as the name of the package). Then create the <strong>MyClass</strong> inside the directory with the first statement being the <strong>package names.</strong> </p><br>
+                            <pre>
+                                // Name of the package must be same as the directory
+                                // under which this file is saved
+                                package myPackage;
+
+                                public class MyClass
+                                {
+                                    public void getNames(String s)
+                                    {
+                                        System.out.println(s);
+                                    }
+                                }
+                            </pre>
+                            <p>Now we can use the <strong>MyClass class</strong> in our program.</p><br>
+                            <pre>
+                                /* import 'MyClass' class from 'names' myPackage */
+                                import myPackage.MyClass;
+
+                                public class PrintName 
+                                {
+                                public static void main(String args[]) 
+                                {       
+                                    // Initializing the String variable 
+                                    // with a value 
+                                    String name = "GeeksforGeeks";
+                                    
+                                    // Creating an instance of class MyClass in 
+                                    // the package.
+                                    MyClass obj = new MyClass();
+                                    
+                                    obj.getNames(name);
+                                }
+                                }
+                            </pre>
+                            <p><strong>Note : MyClass.java</strong> must be saved inside the <strong>myPackage</strong> directory since it is a part of the package.</p>
+                        </ol>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
