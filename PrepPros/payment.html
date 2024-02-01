@@ -7,19 +7,8 @@
 
     <meta name="robots" content="noindex">
 
-    <!-- <link rel="shortcut icon" type="image/x-icon"
-        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-    <link rel="mask-icon"
-        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
-        color="#111">
-    <link rel="canonical" href="https://codepen.io/juliepark/pen/pLMxoP"> -->
-
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" data-inprogress="">
-
-
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" data-inprogress="">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
@@ -99,10 +88,10 @@
         nav a {
             list-style: none;
             padding: 40px;
-            padding-left: 35px;
+            padding-left: 30px;
             padding-right: 10%;
             color: #FFFFFF;
-            font-size: 1.1em;
+            font-size: 1.5em;
             display: block;
             transition: all 0.3s ease-in-out;
         }
@@ -244,7 +233,7 @@
     <div class="container">
         <div id="logo">
             <h1 class="logo">hulu</h1>
-            <div class="CTA">
+            <div class="CTA" onclick="startTimerAndPopup()">
                 <h1 id="fire">Subscribe</h1>
             </div>
         </div>
@@ -252,8 +241,8 @@
             <nav>
                 <a id="profile" class="active"><i class="fa fa-user"></i></a>
                 <a id="payment"><i class="fa fa-credit-card"></i></a>
-                <a id="bank"><i class="fa fa-building"></i></a>
-                <a id="wallet">UPI</a>
+                <a id="bank"><i class="fa-solid fa-building-columns"></i></a>
+                <a id="wallet"><i class="fa-solid fa-money-bill-transfer"></i></a>
                 <!-- <a id="settings"><i class="fa fa-cog"></i></a> -->
             </nav>
         </div>
@@ -302,30 +291,64 @@
 
             <div class="wallet noshow">
                 <h1>Upi</h1>
-                <h2>Manage Email Notifications<button class="btn">manage</button></h2>
+                <h2>Name<button class="btn">manage</button></h2>
                 <p></p>
-                <h2>Manage Privacy Settings<button class="btn">manage</button></h2>
+                <h2>Mobile Number<button class="btn">manage</button></h2>
                 <p></p>
-                <h2>View Terms of Use <button class="btn">view</button></h2>
-                <p></p>
-                <h2>Personalize Ad Experience <button class="btn">update</button></h2>
-                <p></p>
-                <h2>Protect Your Account <button class="btn">protect</button></h2>
-                <p></p>
+                <h3>Scan to pay</h3>
+                <img src="images/qr_code.png" alt="qr code" style="width: 30%; height: 30%;">
             </div>
         </div>
     </div>
-
-    <footer>
-        <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
-        </p>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-237eaacb-6382-11f9-3c62-7c41f90f059b"
         crossorigin=""></script>
 
     <script>
+        function showPaymentSuccessPopup() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Payment Successful',
+            text: 'Thank you for your payment!',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Redirect to index.html
+                window.location.href = 'practise.html';
+            }
+        });
+    }
+
+    function startTimerAndPopup() {
+        var timerContainer = document.createElement('div');
+        timerContainer.setAttribute('id', 'timer-container');
+        timerContainer.style.position = 'fixed';
+        timerContainer.style.top = '50%';
+        timerContainer.style.left = '50%';
+        timerContainer.style.transform = 'translate(-50%, -50%)';
+        timerContainer.style.zIndex = '1000';
+        timerContainer.style.color = '#fff';
+        timerContainer.style.fontSize = '24px';
+        timerContainer.style.fontFamily = 'Montserrat, sans-serif';
+        timerContainer.style.background = 'rgba(0, 0, 0, 0.7)';
+        timerContainer.style.padding = '20px';
+        document.body.appendChild(timerContainer);
+
+        var secondsRemaining = 5;
+
+        var timerInterval = setInterval(function () {
+            timerContainer.innerHTML = 'Validating: ' + secondsRemaining + 's';
+
+            if (secondsRemaining <= 0) {
+                clearInterval(timerInterval);
+                document.body.removeChild(timerContainer); 
+                showPaymentSuccessPopup(); 
+            }
+
+            secondsRemaining--;
+        }, 1000);
+    }
+
         /*active button class onclick*/
         $('nav a').click(function (e) {
             e.preventDefault();
@@ -355,12 +378,6 @@
             //     $('.rightbox').children().not('.settings').addClass('noshow');
             //   }
         });
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Cart',
-            text: 'Added To Cart',
-        })
 
     </script>
 </body>
