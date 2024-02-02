@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (isset($_SESSION['SESSION_EMAIL'])) {
-        header("Location: welcome.php");
+        header("Location:PrepPros\practise.html");
         die();
     }
 
@@ -16,7 +16,7 @@
                 $msg = "<div class='alert alert-success'>Account verification has been successfully completed.</div>";
             }
         } else {
-            header("Location: index.php");
+            header("Location: login.php");
         }
     }
 
@@ -32,7 +32,7 @@
 
             if (empty($row['code'])) {
                 $_SESSION['SESSION_EMAIL'] = $email;
-                header("Location: welcome.php");
+                header("Location: PrepPros\practise.html");
             } else {
                 $msg = "<div class='alert alert-info'>First verify your account and try again.</div>";
             }
