@@ -7,7 +7,7 @@
 
     session_start();
     if (isset($_SESSION['SESSION_EMAIL'])) {
-        header("Location: welcome.php");
+        header("Location:PrepPros\practise.html");
         die();
     }
 
@@ -54,7 +54,7 @@
                         //Content
                         $mail->isHTML(true);                                  //Set email format to HTML
                         $mail->Subject = 'no reply';
-                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/prepros/login/?verification='.$code.'">http://localhost/login/?verification='.$code.'</a></b>';
+                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/PrepPros/landing_page/login/login.php?verification='.$code.'">http://localhost/login/?verification='.$code.'</a></b>';
 
                         $mail->send();
                         echo 'Message has been sent';
@@ -77,7 +77,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Login Form -PREPROS</title>
+    <title>PREPROS</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -120,12 +120,12 @@
                                 required>
                             <input type="password" class="confirm-password" name="confirm-password"
                                 placeholder="Enter Your Confirm Password" required>
-                            <div class="g-recaptcha" data-sitekey="6Lc4PDopAAAAAFpKh0WM9AqqxlMpARD4XOsE2l-2"></div>
+                           
                             <button name="submit" class="btn" style="background-color: purple;"
                                 type="submit">Register</button>
                         </form>
                         <div class="social-icons">
-                            <p>Have an account! <a href="index.php">Login</a>.</p>
+                            <p>Have an account! <a href="login.php">Login</a>.</p>
                         </div>
                         <div class="social-icons">
                             <p>Register with:
