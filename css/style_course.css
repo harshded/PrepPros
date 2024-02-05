@@ -6,6 +6,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    overflow-y: auto; /* Enable vertical scrolling for content */
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 p {
@@ -54,8 +58,11 @@ a:focus {
     display: flex;
     width: 100%;
     align-items: stretch;
+    position: fixed;
+    margin-top: 2px;
  
 }
+
 
 #sidebar {
     min-width: 250px;
@@ -63,7 +70,13 @@ a:focus {
     background:  #c18ee8;
     color: #fff;
     transition: all 0.3s;
+    
 }
+
+#column2{
+    padding: 0;
+}
+
 
 #sidebar.active {
     margin-left: -250px;
@@ -148,11 +161,18 @@ a.article:hover {
 
 #content {
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     min-height: 100vh;
     transition: all 0.3s;
-}
 
+    overflow-y: auto; /* Enable vertical scrolling for content */
+    height: 100vh; /* Adjust this value as needed */
+    
+    
+}
+#content::-webkit-scrollbar {
+    display: none;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

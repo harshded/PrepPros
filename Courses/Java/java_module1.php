@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 
@@ -30,7 +30,7 @@
                     </ul>
                     Servlet Architecture can be depicted from the image itself as provided below as
                     follows:
-                    <img class="hero-wrap" src="images/servlet.webp">
+                    <img class="hero-wrap" src="../../images/servlet.webp">
 
                     Servlet Architecture
 
@@ -106,7 +106,7 @@
                         requests increases.</p>
 
                     <p>Difference between Servlet and CGI</p>
-                    <img class="hero-wrap" src="images/difference.png"><br><br>
+                    <img class="hero-wrap" src="../../images/difference.png"><br><br>
 
                     <p><b>Servlets API’s:</b></p>
 
@@ -117,7 +117,7 @@
                     </ul>
 
                     <b> Various classes and interfaces present in these packages are: </b><br><br>
-                    <img class="hero-wrap" src="images/java-1.png"><br><br>
+                    <img class="hero-wrap" src="../../images/java-1.png"><br><br>
 
                     <p>Advantages of a Java Servlet</p>
                     <ul>
