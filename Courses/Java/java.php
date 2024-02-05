@@ -36,7 +36,7 @@ include  dirname(__DIR__).'../../includes/head.php';
       flex: 4;
       background-color: rgb(250, 246, 255);
       overflow: auto; /* Allow for scrolling if content exceeds column height */
-      padding: 10px;
+      padding: 7px;
       width: 100%;
       height: 100vh; /* Full height of the viewport */
       border: none;
@@ -50,11 +50,11 @@ include  dirname(__DIR__).'../../includes/head.php';
 	  </style>
 </head>
 <body>
-<!-- <?php
-include  dirname(__DIR__).'/preppros/includes/header.php';
+<?php
+include  dirname(__DIR__).'../../includes/header.php';
 
-?> -->
-<nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
+?> 
+<!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
 				style="background-image: url('../../images/logo.png'); height: 90x; width: 90px;"></a>
@@ -66,7 +66,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 				</ul>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 	<!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
