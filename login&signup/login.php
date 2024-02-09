@@ -51,7 +51,6 @@ if (isset($_POST['submit'])) {
 
             // Verify the entered password with the stored hashed password
             if (password_verify($password, $row['password'])) {
-                $_SESSION['user_name'] = $row['user_name'];
                 $_SESSION['full_name'] = $row['full_name'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['user_type'] = $row['user_type'];
