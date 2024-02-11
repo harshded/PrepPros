@@ -1,4 +1,7 @@
 <?php
+// Start session
+session_start();
+
 // Establish database connection
 $servername = "localhost";
 $username = "root";
@@ -16,8 +19,16 @@ if ($conn->connect_error) {
 if (isset($_SESSION['id'])) {
     $userId = $_SESSION['id'];
     
-    $sql = "SELECT user_type FROM users WHERE id = $userId";
-    $result = $conn->query($sql);
+    // Prepare and bind the SQL statement
+    $sql = "SELECT user_type FROM users WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $userId);
+
+    // Execute the statement
+    $stmt->execute();
+
+    // Get the result
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -28,5 +39,11 @@ if (isset($_SESSION['id'])) {
     } else {
         echo "User not found.";
     }
+
+    // Close the statement
+    $stmt->close();
 }
+
+// Close the connection
+$conn->close();
 ?>
