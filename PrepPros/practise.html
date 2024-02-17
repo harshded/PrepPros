@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +24,21 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/course_card.css">
+
+	<style>
+		.charts-conn1 {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.chart1 {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+	</style>
 </head>
 
 <body>
@@ -66,43 +82,15 @@
 							</div>
 						</form>
 					</div>
-					<div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">My progress</h3>
-						<div class="pie animate" style="--p:90;--c:yellow"> 90%</div>
-						<div id="legenda">
-							<div class="entry">
-								<div class="entry-text">Attempted <span id="color-yellow" class="entry-text"> ■</span>
-								</div>
-								<!-- <div id="color-yellow" class="entry-color"></div> -->
-							</div>
-							<div class="entry">
-								<!-- <div id="color-red" class="entry-color"> </div> -->
-								<div class="entry-text">Solved <span id="color-red" class="entry-text"> ■</span></div>
-							</div>
-							<div class="entry">
-								<!-- <div id="color-purple" class="entry-color"></div> -->
-								<div class="entry-text">Correct <span id="color-purple" class="entry-text"> ■</span>
-								</div>
+					<div class="sidebar-box ftco-animate">
+						<div class="charts-conn1">
+							<div class="chart1">
+								<h3 class="heading-sidebar">Success chart</h3>
+								<canvas id="pieChart" width="400" height="200"></canvas>
 							</div>
 						</div>
 					</div>
-					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Course Instructor</h3>
-						<form action="#" class="browse-form">
-							<label for="option-instructor-1"><input type="checkbox" id="option-instructor-1"
-									name="vehicle" value="" checked> Ronald Jackson</label><br>
-							<label for="option-instructor-2"><input type="checkbox" id="option-instructor-2"
-									name="vehicle" value=""> John Dee</label><br>
-							<label for="option-instructor-3"><input type="checkbox" id="option-instructor-3"
-									name="vehicle" value=""> Nathan Messy</label><br>
-							<label for="option-instructor-4"><input type="checkbox" id="option-instructor-4"
-									name="vehicle" value=""> Tony Griffin</label><br>
-							<label for="option-instructor-5"><input type="checkbox" id="option-instructor-5"
-									name="vehicle" value=""> Ben Howard</label><br>
-							<label for="option-instructor-6"><input type="checkbox" id="option-instructor-6"
-									name="vehicle" value=""> Harry Potter</label><br>
-						</form>
-					</div> -->
+
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<section class="ftco-intro">
 							<div class="row justify-content-center">
@@ -130,27 +118,10 @@
 									name="vehicle" value=""> Advanced</label><br>
 						</form>
 					</div>
-
-					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Software</h3>
-						<form action="#" class="browse-form">
-							<label for="option-software-1"><input type="checkbox" id="option-software-1" name="vehicle"
-									value="" checked> Adobe Photoshop</label><br>
-							<label for="option-software-2"><input type="checkbox" id="option-software-2" name="vehicle"
-									value=""> Adobe Illustrator</label><br>
-							<label for="option-software-3"><input type="checkbox" id="option-software-3" name="vehicle"
-									value=""> Sketch</label><br>
-							<label for="option-software-4"><input type="checkbox" id="option-software-4" name="vehicle"
-									value=""> WordPress</label><br>
-							<label for="option-software-5"><input type="checkbox" id="option-software-5" name="vehicle"
-									value=""> HTML &amp; CSS</label><br>
-						</form>
-					</div> -->
 				</div>
 				<!-- End of Sidebar -->
 
 				<!-- Main content -->
-
 				<!-- Career roadmap -->
 				<div class="col-lg-9">
 					<div class="project-wrap">
@@ -230,7 +201,7 @@
 									<div class="price">4 modules</div>
 								</div>
 								<div class="btn">
-									<button class="buy-btn">Start Now</button>
+									<a href="java.html"><button class="buy-btn">Start Now</button></a>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -398,8 +369,8 @@
 								<div class="img"
 									style="background-image: url(images/image_2.webp); border-radius: 7px;">
 									<h2>All Premium features </h2>
-									<p class="mb-0"><a href="premium.html"
-											class="btn btn-primary px-3 py-2 mb-4">Know more</a>
+									<p class="mb-0"><a href="premium.html" class="btn btn-primary px-3 py-2 mb-4">Know
+											more</a>
 									</p>
 								</div>
 							</div>
@@ -466,29 +437,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
 		</div>
 	</footer>
-	<!-- End of footer -->
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+	<script>
+		var pieChartData = {
+			labels: ['Attempted', 'Solved', 'Correct'],
+			datasets: [{
+				data: [55.5, 34.5, 10],
+				backgroundColor: ['#FF5C77', '#FFA23A', '#4DD091']
+			}]
+		};
 
+		var pieChartCanvas = document.getElementById('pieChart').getContext('2d');
+		var pieChart = new Chart(pieChartCanvas, {
+			type: 'pie',
+			data: pieChartData
+		});
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
