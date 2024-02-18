@@ -6,8 +6,7 @@
           <div class="ftco-footer-widget pt-md-5 mb-4">
             <h2 class="ftco-heading-2">About</h2>
             <p>PrepPros is a platform to learn skills that you need for technology jobs. We help you polish your skills and get ready for the job, whether you are a fresh college graduate or a working professional.</p>
-
-             <p>We also get you connected with the right mentors worldwide based on your skills and preferences, and do everything needed to make sure you get your dream job.</p>
+            <p>We also get you connected with the right mentors worldwide based on your skills and preferences, and do everything needed to make sure you get your dream job.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
               <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
