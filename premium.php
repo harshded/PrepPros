@@ -83,6 +83,14 @@
             </div>
         </div>
     </section>
+
+    	<!-- footer begins -->
+	
+<?php
+include  dirname(__DIR__).'/preppros/includes/footer.php';
+
+?>
+	<!-- End of footer -->
 </body>
 
 </html>
