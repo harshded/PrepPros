@@ -191,7 +191,7 @@
 					</div>
 					<div class="row">
 						<section class="container1">
-							<section class="card1">
+							<section class="card1"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">
 								<div class="product-image">
 									<img src="images/work-3.png" alt="OFF-white Red Edition" draggable="false" />
 								</div>
@@ -201,7 +201,11 @@
 									<div class="price">4 modules</div>
 								</div>
 								<div class="btn">
+<<<<<<< Updated upstream
 									<a href="java.html"><button class="buy-btn">Start Now</button></a>
+=======
+									<button class="buy-btn">Start Now</button>
+>>>>>>> Stashed changes
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -209,7 +213,7 @@
 											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
 										</svg>
 									</button>
-								</div>
+								</div></a>
 							</section>
 							<section class="card1 card-blue">
 								<div class="product-image">
@@ -220,17 +224,7 @@
 									<p>Advisor - Avinash Badgu</p>
 									<div class="price">10 modules</div>
 								</div>
-								<div class="btn">
-									<button class="buy-btn">Start Now</button>
-									<button class="fav">
-										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
-											stroke-linejoin="round" stroke-width="2">
-											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-										</svg>
-									</button>
-								</div>
-							</section>
+								
 						</section>
 					</div>
 					<!-- End of Text based courses -->
@@ -380,6 +374,7 @@
 	<!-- main section ended -->
 
 	<!-- footer begins -->
+<<<<<<< Updated upstream
 	<footer class="ftco-footer ftco-no-pt">
 		<div class="container">
 			<div class="row mb-5">
@@ -472,6 +467,15 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+=======
+	
+<?php
+include  dirname(__DIR__).'/preppros/includes/footer.php';
+
+?>
+	<!-- End of footer -->
+
+>>>>>>> Stashed changes
 
 </body>
 
