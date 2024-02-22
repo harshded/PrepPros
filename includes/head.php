@@ -21,6 +21,7 @@ include dirname(__DIR__) . './global.php';
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/style.css">
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/profile_pic.css">
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/course_card.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
   <!-- Bootstrap CSS CDN -->

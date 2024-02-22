@@ -2,28 +2,13 @@
 <html lang="en">
 
 <head>
-	<title>StudyLab - Free Bootstrap 4 Template by Colorlib</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+include  dirname(__DIR__).'/preppros/includes/head1.php';
 
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+include  dirname(__DIR__).'/preppros/includes/head.php';
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+?>
 
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/course_card.css">
 
 	<style>
 		.charts-conn1 {
@@ -40,30 +25,12 @@
 		}
 	</style>
 </head>
-
 <body>
-	<!-- navbar  -->
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light1 scrolled" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
-				style="background-image: url('images/logo.png'); height: 90x; width: 90px;"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item active"><a href="course.html" class="nav-link">Course</a></li>
-					<li class="nav-item"><a href="instructor.html" class="nav-link">Instructor</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Upcoming Events</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<?php
+include  dirname(__DIR__).'/preppros/includes/header.php';
+
+?>
 	<!-- END nav -->
 
 	<!-- main section -->
@@ -201,11 +168,7 @@
 									<div class="price">4 modules</div>
 								</div>
 								<div class="btn">
-<<<<<<< Updated upstream
 									<a href="java.html"><button class="buy-btn">Start Now</button></a>
-=======
-									<button class="buy-btn">Start Now</button>
->>>>>>> Stashed changes
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -374,66 +337,7 @@
 	<!-- main section ended -->
 
 	<!-- footer begins -->
-<<<<<<< Updated upstream
-	<footer class="ftco-footer ftco-no-pt">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-						<h2 class="ftco-heading-2">Help Desk</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Customer Care</a></li>
-							<li><a href="#" class="py-2 d-block">Legal Help</a></li>
-							<li><a href="#" class="py-2 d-block">Services</a></li>
-							<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Call Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Recent Courses</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Web Design</a></li>
-							<li><a href="#" class="py-2 d-block">Business Studies</a></li>
-							<li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Computer Technician</a></li>
-							<li><a href="#" class="py-2 d-block">Web Developer</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
-										View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
-											210</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-											class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+
 
 	<script>
 		var pieChartData = {
@@ -467,7 +371,6 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
-=======
 	
 <?php
 include  dirname(__DIR__).'/preppros/includes/footer.php';
@@ -475,7 +378,6 @@ include  dirname(__DIR__).'/preppros/includes/footer.php';
 ?>
 	<!-- End of footer -->
 
->>>>>>> Stashed changes
 
 </body>
 

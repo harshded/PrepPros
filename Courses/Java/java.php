@@ -18,9 +18,9 @@
             background-color: rgb(250, 246, 255);
             overflow: auto;
             /* Allow for scrolling if content exceeds column height */
-            padding: 7px;
+            padding: 0px;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             /* Full height of the viewport */
             border: none;
 

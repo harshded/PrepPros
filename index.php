@@ -8,12 +8,34 @@ include  dirname(__DIR__).'/preppros/includes/head1.php';
 include  dirname(__DIR__).'/preppros/includes/head.php';
 
 ?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="landing/animate.css">
+    
+    <link rel="stylesheet" href="landing/owl.carousel.min.css">
+    <link rel="stylesheet" href="landing/owl.theme.default.min.css">
+    <link rel="stylesheet" href="landing/magnific-popup.css">
+
+    <link rel="stylesheet" href="landing/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="landing/jquery.timepicker.css">
+    <link rel="stylesheet" href="landing/brand.css">
+    <link rel="stylesheet" href="landing/faq.css">
+    <link rel="stylesheet" href="landing/prep.css">
+    <link rel="stylesheet" href="landing/flaticon.css">
+    <!-- <link rel="stylesheet" href="landing/style.css"> -->
+
 </head>
 
 <body>
 
   <?php
 include  dirname(__DIR__).'/preppros/includes/header.php';
+
+
 
 ?>
 
@@ -608,12 +630,7 @@ include  dirname(__DIR__).'/preppros/includes/footer.php';
 
 
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg></div>
+  
 
 
   <script src="js/jquery.min.js"></script>
