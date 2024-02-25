@@ -12167,7 +12167,7 @@ h5,
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
-  top: -8px;
+  top: 5px;
   left: 0;
   right: 0;
   z-index: 3;
@@ -12401,11 +12401,11 @@ h5,
   right: 0;
   left: 0;
   top: 0;
-  margin-top: -130px;
+  /* margin-top: -140px; */
   background: linear-gradient(to bottom, #c054ff 0%, #CF9FFF 100%) !important;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 0;
+  padding: 12px;
 }
 
 @media (max-width: 991.98px) {
