@@ -76,7 +76,7 @@
                                 <p class="card__price-only">Only</p>
                                 <p class="card__price-value">₹5,999/mo*</p>
                             </div>
-                            <a href="#popup" class="btn btn--white">Get started</a>
+                            <a href="payment.php" class="btn btn--white">Get started</a>
                         </div>
                     </div>
                 </div>
