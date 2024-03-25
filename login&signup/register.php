@@ -152,7 +152,7 @@ include  dirname(__DIR__).'/includes/head1.php';
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form" style=" background-image: url('images/background.png'); object-fit:contain;">
+    <section class="w3l-mockup-form" style="background: linear-gradient(to bottom, #dfb7f6 0%, rgb(194, 32, 194) 100%);">
         <div class="container">
             <!-- /form -->
             <div class="workinghny-form-grid">
@@ -183,7 +183,7 @@ include  dirname(__DIR__).'/includes/head1.php';
                         <div class="social-icons">
                             <p>Have an account! <a href="login.php">Login</a>.</p>
                         </div>
-                        <div class="social-icons">
+                        <!-- <div class="social-icons">
                             <p>Register with:
                                 <a href="#" class="social-icon">
                                     <i class="fab fa-linkedin"></i>
@@ -195,7 +195,7 @@ include  dirname(__DIR__).'/includes/head1.php';
                                     <i class="fab fa-facebook"></i>
                                 </a>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

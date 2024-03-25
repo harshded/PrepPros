@@ -108,7 +108,7 @@ function validateInput($data)
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form" style="background-image: url('images/background.png'); object-fit:contain;">
+    <section class="w3l-mockup-form" style="background: linear-gradient(to bottom, purple 0%, #c054ff 100%);">
         <div class="container">
             <!-- /form -->
             <div class="workinghny-form-grid">
