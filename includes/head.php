@@ -5,8 +5,7 @@ include dirname(__DIR__) . './global.php';
 <head>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" data-inprogress="">
 
   <link rel="stylesheet" href="<?php echo $base_url; ?>css/animate.css">
 

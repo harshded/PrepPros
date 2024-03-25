@@ -8,8 +8,7 @@ include  dirname(__DIR__).'/preppros/includes/head1.php';
 include  dirname(__DIR__).'/preppros/includes/head.php';
 
 ?>
-
-
+<title>Resources</title>
 	<style>
 		.charts-conn1 {
 			display: flex;
@@ -31,6 +30,7 @@ include  dirname(__DIR__).'/preppros/includes/head.php';
 include  dirname(__DIR__).'/preppros/includes/header.php';
 
 ?>
+<link rel="stylesheet" href="includes/header.php">
 	<!-- END nav -->
 
 	<!-- main section -->
