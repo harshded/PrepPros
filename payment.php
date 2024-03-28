@@ -1,105 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Credit/Debit Card Payment</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Stripe Payment</title>
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <style>
+        /* Reset some default styles for cross-browser consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("./images/green.jpg") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the payment form container */
+.payment-form-container {
+    
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+#card-element {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style error messages */
+#error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .payment-form-container {
+        width: 90%;
+    }
+}
+.amount {
+    text-align: center; /* Center-align the content */
+    margin-bottom: 20px; /* Add spacing between the label and the rest of the form */
+}
+
+.amount label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+    </style>
 </head>
 <body>
 
-<div class="padding">
-    <div class="row">
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="col-sm-8 col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <span>CREDIT/DEBIT CARD PAYMENT</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body" style="height: 350px">
-                        <form id="payment-form" action="charge.php" method="POST">
-                            <div class="form-group">
-                                <label for="card-holder-name" class="control-label">CARD HOLDER NAME</label>
-                                <input type="text" name="card_holder_name" class="input-lg form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="card-element" class="control-label">CREDIT/DEBIT CARD DETAILS</label>
-                                <div id="card-element" class="input-lg form-control">
-                                  <!-- A Stripe Element will be inserted here. -->
-                                </div>
-                            </div>
-                            <!-- Used to display form errors. -->
-                            <div id="card-errors" role="alert"></div>
-                            <button id="submit-button" class="btn btn-success btn-lg form-control">MAKE PAYMENT</button>
-                        </form>
-                    </div>
-                </div>
+<div class="payment-form-container">
+    <!-- Your payment form goes here -->
+
+
+<div class="amount">
+<label for="card-element">
+You are making payment of amount ₹6000
+            </label>
             </div>
+            
+
+    <form action="charge.php" method="post" id="payment-form">
+        <div class="form-group">
+            <label for="card-element">
+                Credit or debit card
+            </label>
+            <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+            </div>
+            <!-- Used to display form errors. -->
+            <div id="card-errors" role="alert"></div>
         </div>
+        <button type="submit">Submit Payment</button>
+    </form>
     </div>
-</div>
-
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-    // Create a Stripe client.
-    var stripe = Stripe('pk_test_51OlBkrSF7CoYVXRgPA5KTAIKswcNxZGEG7aFH7ckMNADBoisuW4oSP0G78L85fd4608voBjhMogO9l4HCdCnaFcV00lPVOiCrk');
-
-    // Create an instance of Elements.
-    var elements = stripe.elements();
-
-    // Create an instance of the card Element.
-    var card = elements.create('card');
-
-    // Add an instance of the card Element into the `card-element` div.
-    card.mount('#card-element');
-
-    // Handle real-time validation errors from the card Element.
-    card.addEventListener('change', function(event) {
-        var displayError = document.getElementById('card-errors');
-        if (event.error) {
-            displayError.textContent = event.error.message;
-        } else {
-            displayError.textContent = '';
-        }
-    });
-
-    // Handle form submission.
-    var form = document.getElementById('payment-form');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        // Disable the submit button to prevent multiple submissions.
-        document.getElementById('submit-button').disabled = true;
-        // Submit the form with the token ID.
-        stripe.createToken(card).then(function(result) {
-            if (result.error) {
-                // Inform the user if there was an error.
-                var errorElement = document.getElementById('card-errors');
-                errorElement.textContent = result.error.message;
-                // Enable the submit button.
-                document.getElementById('submit-button').disabled = false;
-            } else {
-                // Send the token ID to your server.
-                stripeTokenHandler(result.token);
-            }
-        });
-    });
-
-    // Submit the form with the token ID.
-    function stripeTokenHandler(token) {
-        // Insert the token ID into the form so it gets submitted to the server.
-        var form = document.getElementById('payment-form');
-        var hiddenInput = document.createElement('input');
-        hiddenInput.setAttribute('type', 'hidden');
-        hiddenInput.setAttribute('name', 'stripeToken');
-        hiddenInput.setAttribute('value', token.id);
-        form.appendChild(hiddenInput);
-        // Submit the form.
-        form.submit();
-    }
-</script>
+    <script src="./js/stripe.js"></script>
 </body>
 </html>
+
+
