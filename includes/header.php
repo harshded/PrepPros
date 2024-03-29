@@ -4,7 +4,7 @@ include(dirname(__DIR__) . '/functions/db.php');
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo $base_url; ?>home.php"><img src="images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="<?php echo $base_url; ?>home.php"><span>Prep</span>Pros</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -40,6 +40,8 @@ include(dirname(__DIR__) . '/functions/db.php');
                                     $_SESSION["path"] = "$base_url.#";
                                 } elseif ($_SESSION['user_type'] == 'user') {
                                     $_SESSION["path"] = "$base_url.#";
+                                } elseif ($_SESSION['user_type'] == 'instructor') {
+                                    $_SESSION["path"] = "$base_url.#";      
                                 } else {
                                     echo "error";
                                 }
@@ -89,6 +91,8 @@ include(dirname(__DIR__) . '/functions/db.php');
                                     $_SESSION["path"] = "$base_url.#";
                                 } elseif ($_SESSION['user_type'] == 'user') {
                                     $_SESSION["path"] = "$base_url.#";
+                                } elseif ($_SESSION['user_type'] == 'instructor') {
+                                    $_SESSION["path"] = "$base_url.#";    
                                 } else {
                                     echo "error";
                                 }
@@ -108,7 +112,7 @@ include(dirname(__DIR__) . '/functions/db.php');
                         <ul>
                         
                             <li><a><b>Hello, <?php echo $_SESSION['full_name']; ?></b> </a></li>
-                            <li><a href="<?php echo $base_url; ?>#">Profile</a></li>
+                            <li><a href="<?php echo $base_url; ?>Dash_functions/view_profile.php">Profile</a></li>
                             <?php
                                     if ($_SESSION['user_type'] === 'premium') {
                                         ?>
@@ -117,6 +121,10 @@ include(dirname(__DIR__) . '/functions/db.php');
                                     } elseif ($_SESSION['user_type'] === 'admin') {
                                         ?>
                             <li><a href="<?php echo $base_url; ?>#">ManageUsers</a></li>
+                            <?php
+                                    } elseif ($_SESSION['user_type'] === 'instructor') {
+                                        ?>
+                            <li><a href="<?php echo $base_url; ?>#">My Schedule</a></li>
                             <?php
                                     } else {
                                         ?>
