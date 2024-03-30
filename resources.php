@@ -8,8 +8,7 @@ include  dirname(__DIR__).'/preppros/includes/head1.php';
 include  dirname(__DIR__).'/preppros/includes/head.php';
 
 ?>
-
-
+<title>Resources</title>
 	<style>
 		.charts-conn1 {
 			display: flex;
@@ -31,6 +30,7 @@ include  dirname(__DIR__).'/preppros/includes/head.php';
 include  dirname(__DIR__).'/preppros/includes/header.php';
 
 ?>
+<link rel="stylesheet" href="includes/header.php">
 	<!-- END nav -->
 
 	<!-- main section -->
@@ -41,14 +41,6 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 
 				<!-- Sidebar -->
 				<div class="col-lg-3 sidebar">
-					<div class="sidebar-box bg-white ftco-animate">
-						<form action="#" class="search-form">
-							<div class="form-group">
-								<span class="icon fa fa-search"></span>
-								<input type="text" class="form-control" placeholder="Search...">
-							</div>
-						</form>
-					</div>
 					<div class="sidebar-box ftco-animate">
 						<div class="charts-conn1">
 							<div class="chart1">
@@ -133,7 +125,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 								</div>
 							</a>
 
-							<a href="#" class="course-category img d-flex align-items-center justify-content-center"
+							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center"
 								style="background-image: url(images/work-2.jpg);">
 								<div class="text w-100 text-center">
 									<h3>HR Round </h3>

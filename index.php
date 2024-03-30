@@ -24,10 +24,10 @@ include  dirname(__DIR__).'/preppros/includes/head.php';
     <link rel="stylesheet" href="landing/jquery.timepicker.css">
     <link rel="stylesheet" href="landing/brand.css">
     <link rel="stylesheet" href="landing/faq.css">
-    <link rel="stylesheet" href="landing/prep.css">
+    <!-- <link rel="stylesheet" href="landing/prep.css"> -->
     <link rel="stylesheet" href="landing/flaticon.css">
     <!-- <link rel="stylesheet" href="landing/style.css"> -->
-
+<title>Home page</title>
 </head>
 
 <body>
