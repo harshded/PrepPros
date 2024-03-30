@@ -51,7 +51,6 @@ if (isset($_POST['submit'])) {
 
             // Verify the entered password with the stored hashed password
             if (password_verify($password, $row['password'])) {
-                $_SESSION['user_name'] = $row['user_name'];
                 $_SESSION['full_name'] = $row['full_name'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['user_type'] = $row['user_type'];
@@ -109,7 +108,7 @@ function validateInput($data)
 <body>
 
     <!-- form section start -->
-    <section class="w3l-mockup-form" style="background-image: url('images/background.png'); object-fit:contain;">
+    <section class="w3l-mockup-form" style="background: linear-gradient(to bottom, purple 0%, #c054ff 100%);">
         <div class="container">
             <!-- /form -->
             <div class="workinghny-form-grid">

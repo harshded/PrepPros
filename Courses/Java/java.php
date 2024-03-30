@@ -2,59 +2,42 @@
 <html lang="en">
 
 <head>
-<?php
-include  dirname(__DIR__).'../../includes/head1.php';
+    <?php
+    include  dirname(__DIR__) . '/../includes/head1.php';
 
-include  dirname(__DIR__).'../../includes/head.php';
+    include  dirname(__DIR__) . '/../includes/head.php';
 
-?>
-
-
+    ?>
 
 
 
-	<!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <style>
+        #column2 {
+            flex: 4;
+            background-color: rgb(250, 246, 255);
+            overflow: auto;
+            /* Allow for scrolling if content exceeds column height */
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            /* Full height of the viewport */
+            border: none;
 
-
-<!-- jQuery CDN - Slim version (=without AJAX) -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css'><link rel="stylesheet" href="../../css/style_course.css">
-	<style>
-		
-	
-		
-		#column2 {
-      flex: 4;
-      background-color: rgb(250, 246, 255);
-      overflow: auto; /* Allow for scrolling if content exceeds column height */
-      padding: 7px;
-      width: 100%;
-      height: 100vh; /* Full height of the viewport */
-      border: none;
-
-      .hidethis {
-      display: none; /* Hide this by default */
-    }
-    }
-	
-	
-	  </style>
+            .hidethis {
+                display: none;
+                /* Hide this by default */
+            }
+        }
+    </style>
 </head>
-<body>
-<?php
-include  dirname(__DIR__).'../../includes/header.php';
 
-?> 
-<!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
+<body>
+    <?php
+    include  dirname(__DIR__) . '/../includes/header.php';
+
+    ?>
+    <!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
 				style="background-image: url('../../images/logo.png'); height: 90x; width: 90px;"></a>
@@ -67,7 +50,7 @@ include  dirname(__DIR__).'../../includes/header.php';
 			</div>
 		</div>
 	</nav> -->
-	<!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
+    <!-- <nav class="navbar navbar-expand-lg ftco-navbar-light1" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand img d-flex justify-content-center" href="index.html"
 				style="background-image: url('images/logo.png'); height: 90x; width: 90px;"></a>
@@ -81,26 +64,26 @@ include  dirname(__DIR__).'../../includes/header.php';
 		</div>
 	</nav>
 	END nav -->
-	<script>
-		function openCity(evt, cityName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tab-content");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tab-links");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(cityName).style.display = "block";
-			evt.currentTarget.className += " active";
-		}
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-	</script>
-<!-- partial:index.partial.html -->
-<div class="wrapper">
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -112,37 +95,40 @@ include  dirname(__DIR__).'../../includes/header.php';
                 <li class="active">
                     <!-- <a href="java_module1.html" target="iframe" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Module 1</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu"> -->
-                        <li>
-                            <a href="abt.php"    target="iframe" >Introduction</a>
-                        </li> 
-                        <li>
-                            <a href="java_module1.php"    target="iframe" >Module 1</a>
-                        </li> 
-                        <!-- <li>
+                <li>
+                    <a href="abt.php" target="iframe">Introduction</a>
+                </li>
+                <li>
+                    <a href=" <?php echo $base_url; ?>ide/index.html" target="iframe">Ide</a>
+                </li>
+                <li>
+                    <a href="java_module1.php" target="iframe">Module 1</a>
+                </li>
+                <!-- <li>
                             <a href="java_module2.html" target="iframe">Servlets</a>
                         </li>
                         <li>
                             <a href="quiz/" target="iframe">Take Test</a>
                         </li> -->
-                    <!-- </ul> -->
+                <!-- </ul> -->
                 </li>
                 <li>
                     <a href="java_module2.php" target="iframe">Module 2</a>
                 </li>
                 <li>
-                    <li>
-                        <a href="java_module3.php" target="iframe">Module 3</a>
-                    </li>
+                <li>
+                    <a href="java_module3.php" target="iframe">Module 3</a>
+                </li>
                 </li>
                 <li>
                     <a href="java_module4.php" target="iframe">Module 4</a>
                 </li>
-               
+
             </ul>
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="resources.php" class="article">Back to Courses</a>
+                    <a href="<?php echo $base_url; ?>resources.php" class="article">Back to Courses</a>
                 </li>
             </ul>
         </nav>
@@ -151,21 +137,23 @@ include  dirname(__DIR__).'../../includes/header.php';
         <div id="content">
 
             <iframe id="column2" name="iframe" frameborder="0" src="abt.php">
-              
+
             </iframe>
-            
+
         </div>
     </div>
-    </div></div>
-<!-- partial -->
-  <script  src="js/script.js"></script>
-  <script>
-    function loadContent(url) {
-      $('.loadhere').load(url);
-    }
-  </script>
+    </div>
+    </div>
+    <!-- partial -->
+    <script src="js/script.js"></script>
+    <script>
+        function loadContent(url) {
+            $('.loadhere').load(url);
+        }
+    </script>
+    <script src="<?php echo $base_url; ?>/js/profile_pic_dd.js"></script>
 
-  
+
 </body>
-</html>
 
+</html>

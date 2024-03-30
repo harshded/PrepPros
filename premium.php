@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="css/card.css" />
-    <title>Flipping Cards</title>
+    <title>PrepPros Premium Page</title>
 </head>
 
 <body>
@@ -76,13 +76,21 @@
                                 <p class="card__price-only">Only</p>
                                 <p class="card__price-value">₹5,999/mo*</p>
                             </div>
-                            <a href="#popup" class="btn btn--white">Get started</a>
+                            <a href="payment.php" class="btn btn--white">Get started</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    	<!-- footer begins -->
+	
+<?php
+include  dirname(__DIR__).'/preppros/includes/footer.php';
+
+?>
+	<!-- End of footer -->
 </body>
 
 </html>
