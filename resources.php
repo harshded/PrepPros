@@ -41,13 +41,38 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 
 				<!-- Sidebar -->
 				<div class="col-lg-3 sidebar">
-					<div class="sidebar-box ftco-animate">
-						<div class="charts-conn1">
-							<div class="chart1">
-								<h3 class="heading-sidebar">Success chart</h3>
-								<canvas id="pieChart" width="400" height="200"></canvas>
+					<div class="sidebar-box bg-white ftco-animate">
+						<form action="#" class="search-form">
+							<div class="form-group">
+								<span class="icon fa fa-search"></span>
+								<input type="text" class="form-control" placeholder="Search...">
 							</div>
-						</div>
+						</form>
+					</div>
+					<div class="sidebar-box bg-white p-4 ftco-animate">
+						<h3 class="heading-sidebar">My progress</h3>
+						<!-- <div class="pie animate" style="--p:90;--c:yellow"> 90%</div>
+						<div id="legenda">
+							<div class="entry">
+								<div class="entry-text">Attempted <span id="color-yellow" class="entry-text"> ■</span>
+								</div> -->
+								<!-- <div id="color-yellow" class="entry-color"></div> -->
+							<!-- </div>
+							<div class="entry"> -->
+								<!-- <div id="color-red" class="entry-color"> </div> -->
+								<!-- <div class="entry-text">Solved <span id="color-red" class="entry-text"> ■</span></div>
+							</div>
+							<div class="entry"> -->
+								<!-- <div id="color-purple" class="entry-color"></div> -->
+								<!-- <div class="entry-text">Correct <span id="color-purple" class="entry-text"> ■</span>
+								</div>
+							</div>
+						</div> -->
+						
+						<?php
+include  dirname(__DIR__).'/preppros/progress_pie.php';
+
+?>
 					</div>
 
 					<div class="sidebar-box bg-white p-4 ftco-animate">
@@ -109,7 +134,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 							</div>
 						</div>
 						<div class="row justify-content-center">
-							<a href="#" class="course-category img d-flex align-items-center justify-content-center"
+							<a href="quiz\index.php" class="course-category img d-flex align-items-center justify-content-center"
 								style="background-image: url(images/work-1.jpg);">
 								<div class="text w-100 text-center">
 									<h3>Aptitude test</h3>
@@ -156,8 +181,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 								</div>
 								<div class="product-info">
 									<h2>Java</h2>
-									<p>Advisor - Asma Sheikh</p>
-									<div class="price">4 modules</div>
+									
 								</div>
 								<div class="btn">
 									<a href="java.html"><button class="buy-btn">Start Now</button></a>
@@ -176,10 +200,66 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 								</div>
 								<div class="product-info">
 									<h2>Python</h2>
-									<p>Advisor - Avinash Badgu</p>
-									<div class="price">10 modules</div>
+									
 								</div>
-								
+								<div class="btn">
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">Start Now</a></button>
+									<button class="fav">
+										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2">
+											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+										</svg>
+									</button>
+								</div>
+							</section>
+							
+							
+						</section>
+					</div>
+
+					<div class="row">
+						<section class="container1">
+							<section class="card1" style="background-color: rgb(248 255 168);">
+								<div class="product-image">
+									<center><img src="images/c.webp" alt="OFF-white Red Edition" draggable="false" width=250 height=250 /></center>
+								</div>
+								<div class="product-info">
+									<h2>C</h2>
+									
+								</div>
+								<div class="btn">
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">Start Now</a></button>
+									<button class="fav">
+										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2">
+											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+										</svg>
+									</button>
+								</div>
+							</section>
+							<section class="card1 card-blue" style="background-color: rgb(255 168 168)">
+								<div class="product-image">
+									<center><img src="images/cpp.webp" alt="OFF-white Blue Edition" draggable="false" width=250 height=250/></center>
+								</div>
+								<div class="product-info">
+									<h2>C++</h2>
+									
+								</div>
+								<div class="btn">
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">Start Now</a></button>
+									<button class="fav">
+										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="2">
+											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+										</svg>
+									</button>
+								</div>
+							</section>
+							
+							
 						</section>
 					</div>
 					<!-- End of Text based courses -->
