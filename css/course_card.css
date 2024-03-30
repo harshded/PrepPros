@@ -63,7 +63,7 @@ img {
   position: relative;
   padding: 1rem;
   width: 350px;
-  height: 450px;
+  height: 350;
   box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
   border-radius: 0.9rem;
   background-color: var(--red-card);
