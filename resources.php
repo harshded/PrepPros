@@ -150,8 +150,8 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								</div>
 							</a>
 
-							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center"
-								style="background-image: url(images/work-2.jpg);">
+							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-2.jpg);" onclick="return checkUserType()">
+								
 								<div class="text w-100 text-center">
 									<h3>HR Round </h3>
 									<span>Know more</span>
@@ -426,6 +426,38 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 			data: pieChartData
 		});
 	</script>
+	<!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script>
+    function checkUserType() {
+        // Assuming you have stored the user type in a session variable named 'user_type'
+        var userType = "<?php echo isset($_SESSION['user_type']) ? $_SESSION['user_type'] : 'normal'; ?>";
+
+        // Check if the user is a premium user
+        if (userType === 'premium') {
+            return true; // Allow the user to access the HR Round page
+        } else {
+            // Display SweetAlert message for normal users
+            Swal.fire({
+                title: "Upgrade to Premium",
+                text: "You need to upgrade to premium to access the HR Round.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Upgrade"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect the user to the payment page
+                    window.location.href = "payment.php";
+                }
+            });
+            return false; // Prevent the default link action
+        }
+    }
+</script>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
