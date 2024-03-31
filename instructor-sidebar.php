@@ -58,11 +58,11 @@ if (isset($_SESSION['id'])) {
                 <span class="links_name" id="my_profile">My Profile</span>
             </a>
             <span class="tooltip">My Profile</span>
-        </li>
+        </li> 
 
 
         <li>
-            <a href="<?php echo $base_url; ?>/Dash_functions/view_products.php">
+            <a href="<?php echo $base_url; ?>/Dash_functions/schedule">
                 <i class="bx bx-folder"></i>
                 <span class="links_name"> My Schedule</span>
             </a>

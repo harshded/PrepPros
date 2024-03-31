@@ -19,16 +19,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- Include SweetAlert2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<?php
+<?php 
 require_once('db-connect.php');
 
-
-if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    echo "<script>
+if(!isset($_GET['id'])){
+    echo "<script> 
             Swal.fire({
                 icon: 'error',
-                title: 'Error',
-                text: 'No data to save.'
+                title: 'Undefined Schedule ID',
+                text: 'Please provide a valid Schedule ID.',
+                confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.replace('./');
@@ -39,37 +39,28 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     exit;
 }
 
-extract($_POST);
-$allday = isset($allday);
-$meeting_link = 'https://meet.google.com/wdn-twmw-nqo';
+$delete = $conn->query("DELETE FROM `schedule_list` WHERE id = '{$_GET['id']}'");
 
-if(empty($id)) {
-    $sql = "INSERT INTO `schedule_list` (`student_name`, `email`) VALUES ('$title', '$description', '$start_datetime', '$end_datetime', '$student_name', '$email')";
-} else {
-    $sql = "UPDATE `schedule_list` SET `student_name` = '$student_name', `email` = '$email', `meeting_link` = '$meeting_link' WHERE `id` = '$id'";
-}
-
-$save = $conn->query($sql);
-
-if ($save) {
-    echo "<script>
+if($delete){
+    echo "<script> 
             Swal.fire({
                 icon: 'success',
                 title: 'Success',
-                text: 'Schedule Successfully Saved.',
+                text: 'Event has been deleted successfully.',
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = '/PrepPros/Dash_functions/view_profile.php';
+                    window.location.replace('./');
                 }
             });
           </script>";
-} else {
-    echo "<script>
+}else{
+    echo "<script> 
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: 'An error occurred.{$conn->error}'
+                text: 'An error occurred. {$conn->error}',
+                confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.replace('./');
@@ -77,8 +68,8 @@ if ($save) {
             });
           </script>";
 }
-
 $conn->close();
 ?>
+
 </body>
 </html>

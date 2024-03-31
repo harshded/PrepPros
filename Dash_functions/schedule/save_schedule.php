@@ -41,12 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 extract($_POST);
 $allday = isset($allday);
-$meeting_link = 'https://meet.google.com/wdn-twmw-nqo';
 
-if(empty($id)) {
-    $sql = "INSERT INTO `schedule_list` (`student_name`, `email`) VALUES ('$title', '$description', '$start_datetime', '$end_datetime', '$student_name', '$email')";
+if (empty($id)) {
+    $sql = "INSERT INTO `schedule_list` (`title`, `description`, `start_datetime`, `end_datetime`) VALUES ('$title', '$description', '$start_datetime', '$end_datetime')";
 } else {
-    $sql = "UPDATE `schedule_list` SET `student_name` = '$student_name', `email` = '$email', `meeting_link` = '$meeting_link' WHERE `id` = '$id'";
+    $sql = "UPDATE `schedule_list` SET `title` = '{$title}', `description` = '{$description}', `start_datetime` = '{$start_datetime}', `end_datetime` = '{$end_datetime}' WHERE `id` = '{$id}'";
 }
 
 $save = $conn->query($sql);
