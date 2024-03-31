@@ -1,9 +1,9 @@
 <?php
 
-// Load Composer's autoloader
+//Load Composer's autoloader
 require 'vendor/autoload.php';
 
-// Import PHPMailer classes into the global namespace
+//Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -28,14 +28,15 @@ function validateInput($data)
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Registration form submitted
-
+   
     $name = validateInput($_POST['name']);
     $email = validateInput($_POST['email']);
     $password = validateInput($_POST['password']);
     $confirmPassword = validateInput($_POST['confirm_password']);
+    $user_type = isset($_POST['user_type']) ? validateInput($_POST['user_type']) : '';
 
     // Additional validation checks
-    if (empty($name) || empty($email) || empty($password) || empty($confirmPassword)) {
+    if (empty($name) || empty($email) || empty($password) || empty($confirmPassword) || empty($user_type)) {
         $msg = "<div class='alert alert-danger'>All fields are required.</div>";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $msg = "<div class='alert alert-danger'>Invalid email format.</div>";
@@ -62,16 +63,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_num_rows($result) > 0) {
             $msg = "<div class='alert alert-danger'>This email address is invalid or already exists.</div>";
         } else {
-            // Handle user type based on the selected radio button
-            $userType = "user"; // Default user type
-            if(isset($_POST['user_type']) && $_POST['user_type'] == "instructor") {
-                $userType = "instructor";
-            }
-
-            // Insert user data into the database with the selected user type
+            // Insert user data into the database
             $insertUserQuery = "INSERT INTO users (full_name, email, password, code, user_type, user_status) VALUES (?, ?, ?, ?, ?, 'Active')";
             $insertUserStmt = mysqli_prepare($conn, $insertUserQuery);
-            mysqli_stmt_bind_param($insertUserStmt, "sssss", $name, $email, $hashedPassword, $code, $userType);
+            mysqli_stmt_bind_param($insertUserStmt, "sssss", $name, $email, $hashedPassword, $code, $user_type);
             $insertResult = mysqli_stmt_execute($insertUserStmt);
 
             if ($insertResult) {
@@ -79,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $mail = new PHPMailer(true);
 
                 try {
-                    // Server settings
+                    //Server settings
                     $mail->SMTPDebug = 0;
                     $mail->isSMTP();
                     $mail->Host       = 'smtp.gmail.com';
@@ -89,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                     $mail->Port       = 465;
 
-                    // Recipients
+                    //Recipients
                     $mail->setFrom('prepbroszz@gmail.com');
                     $mail->addAddress($email);
 
@@ -116,28 +111,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="zxx">
 
 <head>
-    <!-- Meta tag Keywords -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <!-- <meta charset="UTF-8" /> -->
-    <meta name="keywords" content="Login Form" />
-    <!-- //Meta tag Keywords -->
-
+    <?php include dirname(__DIR__).'/includes/head1.php'; ?>
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!--/Style-CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <!--//Style-CSS -->
-
     <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
-
-    <!-- form section start -->
-    <section class="w3l-mockup-form" style=" background-image: url('images/background.png'); object-fit:contain;">
+    <section class="w3l-mockup-form" style="background: linear-gradient(to bottom, #dfb7f6 0%, rgb(194, 32, 194) 100%);">
         <div class="container">
-            <!-- /form -->
             <div class="workinghny-form-grid">
                 <div class="main-mockup">
                     <div class="w3l_form align-self">
@@ -157,55 +140,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <input type="password" class="password" name="password" placeholder="Enter Your Password"
                                 required>
                             <input type="password" class="confirm_password" name="confirm_password"
-                                placeholder="Enter Your Confirm Password" required>
-                           
-                            <label for="user_type">Select User Type:</label>
-                            <div id="user_type">
+                                placeholder="Confirm Password" required>
+
+                            <!-- Add radio button for selecting user or instructor -->
+                            <div>
                                 <input type="radio" id="user" name="user_type" value="user" checked>
                                 <label for="user">User</label>
                                 <input type="radio" id="instructor" name="user_type" value="instructor">
                                 <label for="instructor">Instructor</label>
                             </div>
-                            
+
                             <button name="submit" class="btn" style="background-color: purple;"
                                 type="submit">Register</button>
-                                
                         </form>
                         <div class="social-icons">
                             <p>Have an account! <a href="login.php">Login</a>.</p>
                         </div>
-                        <div class="social-icons">
-                            <p>Register with:
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- //form -->
         </div>
     </section>
-    <!-- //form section start -->
-
     <script src="js/jquery.min.js"></script>
     <script>
-    $(document).ready(function (c) {
-        $('.alert-close').on('click', function (c) {
-            $('.main-mockup').fadeOut(100, function (c) {
-                $('.main-mockup').remove();
+        $(document).ready(function(c) {
+            $('.alert-close').on('click', function(c) {
+                $('.main-mockup').fadeOut(100, function(c) {
+                    $('.main-mockup').remove();
+                });
             });
         });
-    });
-</script>
-
+    </script>
 </body>
 
 </html>
