@@ -128,5 +128,3 @@ You are making payment of amount ₹6000
     <script src="./js/stripe.js"></script>
 </body>
 </html>
-
-

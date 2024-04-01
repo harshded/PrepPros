@@ -142,7 +142,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								</div>
 							</a>
 
-							<a href="#" class="course-category img d-flex align-items-center justify-content-center"
+							<a href="<?php echo $base_url;?>Courses/technical.php" class="course-category img d-flex align-items-center justify-content-center"
 								style="background-image: url(images/work-9.jpg);">
 								<div class="text w-100 text-center">
 									<h3>Technical Round</h3>
