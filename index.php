@@ -169,9 +169,9 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
         <div class="col-md-3 col-lg-2">
           <a href="login&signup/register.php"
             class="course-category img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/c-sharp.png);">
+            style="background-image: url(images/c.webp);">
             <div class="text w-100 text-center">
-              <h3>C#</h3>
+              <h3>C</h3>
 
             </div>
           </a>

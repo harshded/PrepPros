@@ -1,19 +1,7 @@
 <?php
 session_start();
 require_once('db_connect.php');
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Processing</title>
-    <!-- Include SweetAlert 2 library -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</head>
-<body>
-<?php
 // Process payment using Stripe or any other payment processing library
 
 // After successful payment processing:
@@ -27,6 +15,7 @@ $stmt->bind_param("i", $user_id);
 
 if ($stmt->execute()) {
     // User type updated successfully
+<<<<<<< Updated upstream
     // Display SweetAlert success message
     echo '<script>
             Swal.fire({
@@ -57,4 +46,14 @@ if ($stmt->execute()) {
 ?>
 </body>
 </html>
-
+=======
+    // Redirect the user or display a success message
+    header("Location: resources.php"); // Redirect to a payment success page
+    exit();
+} else {
+    // Error updating user type
+    // Handle error scenario
+    echo "Error updating user type: " . $stmt->error;
+}
+?>
+>>>>>>> Stashed changes

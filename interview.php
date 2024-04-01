@@ -42,8 +42,8 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
             <br>
             <h4>As all hirings are going remote. Equip yourself with a completely online mock interview experience.
             </h4>
-            <p class="mb-4"><a href="premium.php" class="btn btn-primary px-4 py-3">Book a slot</a><a
-                href="instructor_details.php" class="btn btn-primary ml-5 px-4 py-3">Know your mentors</a></p>
+            <p class="mb-4"><a href="./schedule" class="btn btn-primary px-4 py-3">Book a slot</a><a
+                href="instructor-details.php" class="btn btn-primary ml-5 px-4 py-3">Know your mentors</a></p>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
               <h4>Your candidature is seen through a real mentors' eyes and thus the feedback from these experts is
                 authentic and actionable.
               </h4>
-              <p class="mb-4"><a href="instructor-details.html" class="btn btn-primary px-4 py-3">Know your mentors</a>
+              <p class="mb-4"><a href="instructor-details.php" class="btn btn-primary px-4 py-3">Know your mentors</a>
               </p>
             </div>
           </div>
@@ -131,12 +131,6 @@ include  dirname(__DIR__).'/preppros/includes/footer.php';
 ?>
     <!-- End of footer -->
 
-    <!-- loader -->
-    <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-          stroke="#F96D00" />
-      </svg></div> -->
 
 
     <script src="js/jquery.min.js"></script>
