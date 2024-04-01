@@ -14,7 +14,7 @@ if (isset($_SESSION['id'])) {
     <div class="logo-details">
         <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
         <a href="<?php echo $base_url;?>/index.php" class="logo_name">
-            <div class="logo_name">शेत-e</div>
+            <div class="logo_name">PrepPros</div>
         </a>
         <i class="bx bx-menu" id="btn"></i>
     </div>
@@ -80,13 +80,13 @@ if (isset($_SESSION['id'])) {
             </a>
             <span class="tooltip">Buy Premium</span>
         </li>
-         <!-- <li>
-          <a href="<?php echo $base_url; ?>/Dash_functions/show_addresses.php">
+         <li>
+          <a href="<?php echo $base_url; ?>/Dash_functions/mycode.php">
             <i class="bx bxs-edit-location"></i>
             <span class="links_name">Manage Address</span>
           </a>
           <span class="tooltip">Manage Address</span>
-        </li> -->
+        </li>
         <!--
         <li>
           <a href="#">
