@@ -15,11 +15,7 @@
 /* Apply some basic styles to the body */
 body {
     font-family: Arial, sans-serif;
-<<<<<<< Updated upstream
-    background: linear-gradient(to bottom, purple 0%, #c054ff 100%) ;
-=======
     background: linear-gradient(to bottom, purple 0%, #c054ff 100%);
->>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;

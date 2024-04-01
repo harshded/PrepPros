@@ -116,8 +116,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 										<div class="overlay"></div>
 										<h2>Find the Right career for you in Tech</h2>
 										<p>Find your personalised career roadmap in simple and easy 3 steps</p>
-										<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Generate my
-												roadmap</a>
+										<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3" onclick="return checkUserType();">Generate my roadmap</a></p>
 										</p>
 									</div>
 								</div>
@@ -457,6 +456,36 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
         }
     }
 </script>
+
+<script>
+    function checkUserType() {
+        // Assuming you have stored the user type in a session variable named 'user_type'
+        var userType = "<?php echo isset($_SESSION['user_type']) ? $_SESSION['user_type'] : 'normal'; ?>";
+
+        // Check if the user is a premium user
+        if (userType === 'premium') {
+            // Redirect the premium user to the roadmap generation page
+            window.location.href = "roadmap/ContactFrom_v1/roadmap.php";
+        } else {
+            // Display SweetAlert message for normal users
+            Swal.fire({
+                title: "Upgrade to Premium",
+                text: "You need to upgrade to premium to access the roadmap generation feature.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Upgrade"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect the user to the payment page
+                    window.location.href = "payment.php";
+                }
+            });
+        }
+    }
+</script>
+
 
 
 	<script src="js/jquery.min.js"></script>

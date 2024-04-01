@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/quiz_instruction.css">
 </head>
 
 <body>
@@ -108,7 +109,24 @@ print(type(s2))
 </code></pre>
 <p>Output:</p>
 <img class="hero-wrap" src="../../images/data5.jpg">
-
+<br>
+<!-- quiz  -->
+<article class="cta" style="	justify-content: center;
+	align-items: center;">
+	<!-- <img src='https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400' alt='Bluetit'> -->
+	<center?><div class="cta__text-column" >
+		<h2>
+			Take Quiz on Module 3</h2>
+			<ul>
+				<li>This quiz consists of 10 questions based on the content covered in the Python course.</li>
+				<li>Each question has a 20-second time limit.</li>
+				<li>Once an answer is submitted, you cannot revisit or change it.</li>
+				<li>We wish you the best of luck with your quiz!</li>
+			  </ul>
+		<center><a href="quiz.php?module=cpp_1" >Start Quiz</a></center>
+	</div></center>
+</article>
+<br>
 <h3>3. Python Data Type – Tuple</h3>
 <h4>
 <p>Tuple is an immutable data type in Python, which means it cannot be changed. It is an ordered collection of elements enclosed in round brackets and separated by commas.</p>

@@ -4,7 +4,7 @@ include(dirname(__DIR__) . '/functions/db.php');
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo $base_url; ?>home.php"><img src="../images/logo.png" alt="our Logo" /></a>
+            <a class="navbar-brand" href="<?php echo $base_url; ?>home.php"><img src="../images/logo.jpg" alt="our Logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
