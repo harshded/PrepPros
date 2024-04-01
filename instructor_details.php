@@ -76,6 +76,42 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
           <div class="staff-2 w-100">
             <div class="img-wrap d-flex align-items-stretch">
               <div class="img align-self-stretch d-flex align-items-end"
+                style="background-image: url(images/manjusha.jpeg);">
+                <div class="text mb-4 text-md-center">
+                  <h3>Manjusha Wadekar</h3>
+                  <span class="position mb-2">ASP .NET</span>
+                  <a href="/PrepPros/Dash_functions/view_profile.php"><span class="position mb-2">Book a session</span></a>
+                  <div class="faded">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <div class="staff-detail w-100 pl-md-5">
+            <h3>About</h3>
+            <p>Dedicated to teaching computer fundamentals and programming concepts.
+              Conducts interactive sessions to help students grasp foundational principles.</p>
+            <h3>Education</h3>
+            <p> - </p>
+            <h3>Experience</h3>
+            <p>Conducts interactive sessions to help students grasp foundational principles.
+              Recognized as an NPTEL (National Programme on Technology Enhanced Learning) course instructor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ftco-animate d-flex align-items-center align-items-stretch">
+          <div class="staff-2 w-100">
+            <div class="img-wrap d-flex align-items-stretch">
+              <div class="img align-self-stretch d-flex align-items-end"
                 style="background-image: url(images/deo.jpeg);">
                 <div class="text mb-4 text-md-center">
                   <h3>Bageshree Deo</h3>
@@ -106,207 +142,6 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
       </div>
     </div>
   </section>
-  <!-- <section class="ftco-section bg-light">
- <div class="container">
-  <div class="row">
-   <div class="col-md-4 ftco-animate d-flex align-items-center align-items-stretch">
-    <div class="staff-2 w-100">
-     <div class="img-wrap d-flex align-items-stretch">
-      <div class="img align-self-stretch d-flex align-items-end" style="background-image: url(images/jog.jpeg);">
-       <div class="text mb-4 text-md-center">
-        <h3>Amruta Jog</h3>
-        <span class="position mb-2">C/C++</span>
-        <div class="faded">
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-</div>
-<div class="col-md-8 d-flex align-items-center">
-  <div class="staff-detail w-100 pl-md-5">
-   <h3>About</h3>
-   <p>Known for her engaging teaching style and ability to simplify complex concepts</p>
-   <h3>Education</h3>
-   <p>Bachelor of Engineering (B.E.) in Electrical Engineering. Master of Computer Applications (MCA).</p>
-   <h3>Experience</h3>
-   <p>Proficient in teaching various coding subjects, including C, C++, Data Structures, Python, Cybersecurity, and Operating Systems.</p>
- </div>
-</div>
-</div>
-</div>
-</section>
-<section class="ftco-section bg-light">
- <div class="container">
-  <div class="row">
-   <div class="col-md-4 ftco-animate d-flex align-items-center align-items-stretch">
-    <div class="staff-2 w-100">
-     <div class="img-wrap d-flex align-items-stretch">
-      <div class="img align-self-stretch d-flex align-items-end" style="background-image: url(images/jog.jpeg);">
-       <div class="text mb-4 text-md-center">
-        <h3>Amruta Jog</h3>
-        <span class="position mb-2">C/C++</span>
-        <div class="faded">
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-</div>
-<div class="col-md-8 d-flex align-items-center">
-  <div class="staff-detail w-100 pl-md-5">
-   <h3>About</h3>
-   <p>Known for her engaging teaching style and ability to simplify complex concepts</p>
-   <h3>Education</h3>
-   <p>Bachelor of Engineering (B.E.) in Electrical Engineering. Master of Computer Applications (MCA).</p>
-   <h3>Experience</h3>
-   <p>Proficient in teaching various coding subjects, including C, C++, Data Structures, Python, Cybersecurity, and Operating Systems.</p>
- </div>
-</div>
-</div>
-</div>
-</section>
-<section class="ftco-section bg-light">
- <div class="container">
-  <div class="row">
-   <div class="col-md-4 ftco-animate d-flex align-items-center align-items-stretch">
-    <div class="staff-2 w-100">
-     <div class="img-wrap d-flex align-items-stretch">
-      <div class="img align-self-stretch d-flex align-items-end" style="background-image: url(images/jog.jpeg);">
-       <div class="text mb-4 text-md-center">
-        <h3>Amruta Jog</h3>
-        <span class="position mb-2">C/C++</span>
-        <div class="faded">
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-</div>
-<div class="col-md-8 d-flex align-items-center">
-  <div class="staff-detail w-100 pl-md-5">
-   <h3>About</h3>
-   <p>Known for her engaging teaching style and ability to simplify complex concepts</p>
-   <h3>Education</h3>
-   <p>Bachelor of Engineering (B.E.) in Electrical Engineering. Master of Computer Applications (MCA).</p>
-   <h3>Experience</h3>
-   <p>Proficient in teaching various coding subjects, including C, C++, Data Structures, Python, Cybersecurity, and Operating Systems.</p>
- </div>
-</div>
-</div>
-</div>
-</section> -->
-
-
-
-
-
-  <!-- courses list  -->
-  <!-- <section class="ftco-section bg-light ftco-no-pt">
-    <div class="container">
-      <div class="row pb-4">
-        <div class="col-md-12 heading-section ftco-animate">
-          <h2 class="mb-4">Course By Stephen Wilson</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-1.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-2.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-3.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-4.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-5.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 ftco-animate">
-          <div class="project-wrap">
-            <a href="#" class="img" style="background-image: url(images/work-6.jpg);">
-              <span class="price">Software</span>
-            </a>
-            <div class="text p-4">
-              <h3><a href="#">Design for the web with adobe photoshop</a></h3>
-              <p class="advisor">Advisor <span>Tony Garret</span></p>
-              <ul class="d-flex justify-content-between">
-                <li><span class="flaticon-shower"></span>2300</li>
-                <li class="price">$199</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- footer begins -->
 
