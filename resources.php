@@ -8,7 +8,21 @@ include  dirname(__DIR__).'/preppros/includes/head1.php';
 include  dirname(__DIR__).'/preppros/includes/head.php';
 
 ?>
+<title>Resources</title>
+	<style>
+		.charts-conn1 {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			margin-bottom: 20px;
+		}
 
+		.chart1 {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+	</style>
 </head>
 <body>
 
@@ -16,6 +30,8 @@ include  dirname(__DIR__).'/preppros/includes/head.php';
 include  dirname(__DIR__).'/preppros/includes/header.php';
 
 ?>
+<link rel="stylesheet" href="includes/header.php">
+	<!-- END nav -->
 
 	<!-- main section -->
 	<section class="ftco-section bg-light">
@@ -58,23 +74,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 
 ?>
 					</div>
-					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Course Instructor</h3>
-						<form action="#" class="browse-form">
-							<label for="option-instructor-1"><input type="checkbox" id="option-instructor-1"
-									name="vehicle" value="" checked> Ronald Jackson</label><br>
-							<label for="option-instructor-2"><input type="checkbox" id="option-instructor-2"
-									name="vehicle" value=""> John Dee</label><br>
-							<label for="option-instructor-3"><input type="checkbox" id="option-instructor-3"
-									name="vehicle" value=""> Nathan Messy</label><br>
-							<label for="option-instructor-4"><input type="checkbox" id="option-instructor-4"
-									name="vehicle" value=""> Tony Griffin</label><br>
-							<label for="option-instructor-5"><input type="checkbox" id="option-instructor-5"
-									name="vehicle" value=""> Ben Howard</label><br>
-							<label for="option-instructor-6"><input type="checkbox" id="option-instructor-6"
-									name="vehicle" value=""> Harry Potter</label><br>
-						</form>
-					</div> -->
+
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<section class="ftco-intro">
 							<div class="row justify-content-center">
@@ -102,27 +102,10 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									name="vehicle" value=""> Advanced</label><br>
 						</form>
 					</div>
-
-					<!-- <div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Software</h3>
-						<form action="#" class="browse-form">
-							<label for="option-software-1"><input type="checkbox" id="option-software-1" name="vehicle"
-									value="" checked> Adobe Photoshop</label><br>
-							<label for="option-software-2"><input type="checkbox" id="option-software-2" name="vehicle"
-									value=""> Adobe Illustrator</label><br>
-							<label for="option-software-3"><input type="checkbox" id="option-software-3" name="vehicle"
-									value=""> Sketch</label><br>
-							<label for="option-software-4"><input type="checkbox" id="option-software-4" name="vehicle"
-									value=""> WordPress</label><br>
-							<label for="option-software-5"><input type="checkbox" id="option-software-5" name="vehicle"
-									value=""> HTML &amp; CSS</label><br>
-						</form>
-					</div> -->
 				</div>
 				<!-- End of Sidebar -->
 
 				<!-- Main content -->
-
 				<!-- Career roadmap -->
 				<div class="col-lg-9">
 					<div class="project-wrap">
@@ -167,7 +150,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								</div>
 							</a>
 
-							<a href="#" class="course-category img d-flex align-items-center justify-content-center"
+							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center"
 								style="background-image: url(images/work-2.jpg);">
 								<div class="text w-100 text-center">
 									<h3>HR Round </h3>
@@ -192,7 +175,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 					</div>
 					<div class="row">
 						<section class="container1">
-							<section class="card1">
+							<section class="card1"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">
 								<div class="product-image">
 									<img src="images/work-3.png" alt="OFF-white Red Edition" draggable="false" />
 								</div>
@@ -201,7 +184,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									
 								</div>
 								<div class="btn">
-									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">Start Now</a></button>
+									<a href="java.html"><button class="buy-btn">Start Now</button></a>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -209,7 +192,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 											<path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
 										</svg>
 									</button>
-								</div>
+								</div></a>
 							</section>
 							<section class="card1 card-blue">
 								<div class="product-image">
@@ -415,8 +398,8 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								<div class="img"
 									style="background-image: url(images/image_2.webp); border-radius: 7px;">
 									<h2>All Premium features </h2>
-									<p class="mb-0"><a href="https://bmcc.ac.in/programs/2/5"
-											class="btn btn-primary px-3 py-2 mb-4">Know more</a>
+									<p class="mb-0"><a href="premium.html" class="btn btn-primary px-3 py-2 mb-4">Know
+											more</a>
 									</p>
 								</div>
 							</div>
@@ -426,86 +409,23 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 	<!-- main section ended -->
 
 	<!-- footer begins -->
-	<footer class="ftco-footer ftco-no-pt">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-						<h2 class="ftco-heading-2">Help Desk</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Customer Care</a></li>
-							<li><a href="#" class="py-2 d-block">Legal Help</a></li>
-							<li><a href="#" class="py-2 d-block">Services</a></li>
-							<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Call Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Recent Courses</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Web Design</a></li>
-							<li><a href="#" class="py-2 d-block">Business Studies</a></li>
-							<li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Computer Technician</a></li>
-							<li><a href="#" class="py-2 d-block">Web Developer</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
-										View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
-											210</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-											class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
 
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End of footer -->
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+	<script>
+		var pieChartData = {
+			labels: ['Attempted', 'Solved', 'Correct'],
+			datasets: [{
+				data: [55.5, 34.5, 10],
+				backgroundColor: ['#FF5C77', '#FFA23A', '#4DD091']
+			}]
+		};
 
+		var pieChartCanvas = document.getElementById('pieChart').getContext('2d');
+		var pieChart = new Chart(pieChartCanvas, {
+			type: 'pie',
+			data: pieChartData
+		});
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -523,6 +443,13 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	
+<?php
+include  dirname(__DIR__).'/preppros/includes/footer.php';
+
+?>
+	<!-- End of footer -->
+
 
 </body>
 
