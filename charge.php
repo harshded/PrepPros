@@ -27,7 +27,6 @@ $stmt->bind_param("i", $user_id);
 
 if ($stmt->execute()) {
     // User type updated successfully
-<<<<<<< Updated upstream
     // Display SweetAlert success message
     echo '<script>
             Swal.fire({
@@ -58,14 +57,4 @@ if ($stmt->execute()) {
 ?>
 </body>
 </html>
-=======
-    // Redirect the user or display a success message
-    header("Location: resources.php"); // Redirect to a payment success page
-    exit();
-} else {
-    // Error updating user type
-    // Handle error scenario
-    echo "Error updating user type: " . $stmt->error;
-}
-?>
->>>>>>> Stashed changes
+

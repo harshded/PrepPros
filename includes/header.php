@@ -58,7 +58,7 @@ include(dirname(__DIR__) . '/functions/db.php');
                             class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="<?php echo $base_url; ?>resources.php"
                             class="nav-link">Resources</a></li>
-                    <li class="nav-item"><a href="<?php echo $base_url; ?>instructor.php"
+                    <li class="nav-item"><a href="<?php echo $base_url; ?>instructor_details.php"
                             class="nav-link">Instructor</a></li>
                     <li class="nav-item"><a href="<?php echo $base_url; ?>blog.php" class="nav-link">Articles</a></li>
                     <li class="nav-item"><a href="<?php echo $base_url; ?>about.php"

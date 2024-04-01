@@ -184,7 +184,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									
 								</div>
 								<div class="btn">
-									<a href="java.html"><button class="buy-btn">Start Now</button></a>
+									<a href="courses/Java/java.php"><button class="buy-btn">Start Now</button></a>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -203,7 +203,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									
 								</div>
 								<div class="btn">
-									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">Start Now</a></button>
+									<button class="buy-btn"><a style="color: white;" href="courses/python/python.php">Start Now</a></button>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
