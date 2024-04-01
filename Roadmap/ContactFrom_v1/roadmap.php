@@ -30,7 +30,12 @@
         }
 
         .wrap-input1 a:hover {
-            color: #57b846;
+            color: rgb(208, 157, 208);
+        }
+        a{
+            color: #000;
+            font-size: large;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -39,22 +44,22 @@
 <div class="contact1">
     <div class="container-contact1">
         <div class="contact1-pic js-tilt" data-tilt>
-            <img src="images/img-01.png" alt="IMG">
+            <img src="images/img.png" alt="IMG">
         </div>
 
         <form class="contact1-form validate-form">
             <span class="contact1-form-title">
-                Get in touch
+                Find the Right career for you in Tech
             </span>
 
             <div class="wrap-input1 validate-input" data-validate="What is your professional background?">
                 <span class="contact1-form-title">
                     <a href="https://roadmap.sh/ai-data-scientist">Data Science</a><br>
-                    <a href="DATA_ANALYST.php">Data Analyst</a><br>
-                    <a href="SOFTWARE.php">Software Engineering</a><br>
-                    <a href="BACKEND.php">Backend Development</a><br>
-                    <a href="FRONTEND.php">Frontend Development</a><br>
-                    <!-- Add more career track links as needed -->
+                    <a href="https://roadmap.sh/full-stack">Full Stack</a><br>
+                    <a href="https://roadmap.sh/backend">Backend Development</a><br>
+                    <a href="https://roadmap.sh/frontend">Frontend Development</a><br>
+                    <a href="https://roadmap.sh/cyber-security">Cyber-Security</a><br>
+
                 </span>
             </div>
 

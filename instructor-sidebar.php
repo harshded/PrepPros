@@ -18,7 +18,7 @@ if (isset($_SESSION['id'])) {
         <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
 
         <a href="<?php echo $base_url;?>/index.php" class="logo_name">
-            <div class="logo_name">शेत-e</div>
+            <div class="logo_name">PrepPros</div>
         </a>
         <i class="bx bx-menu" id="btn"></i>
     </div>

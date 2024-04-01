@@ -14,7 +14,7 @@ if (isset($_SESSION['id'])) {
     <div class="logo-details">
         <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
         <a href="<?php echo $base_url;?>/index.php" class="logo_name">
-            <div class="logo_name">शेत-e</div>
+            <div class="logo_name">PrepPros</div>
         </a>
         <i class="bx bx-menu" id="btn"></i>
     </div>
@@ -73,7 +73,7 @@ if (isset($_SESSION['id'])) {
             <span class="tooltip">My Orders</span>
         </li> -->
         <li>
-            <a href="<?php echo $base_url; ?>/cart.php">
+            <a href="<?php echo $base_url; ?>resources.php">
                 <i class="bx bx-laptop"></i>
                 <span class="links_name"> My Courses</span>
             </a>

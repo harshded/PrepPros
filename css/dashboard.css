@@ -18,7 +18,7 @@
   transition: all 0.5s ease;
 }
 .sidebar.open{
-  width: 290px;
+  width: 340px;
 }
 .sidebar .logo-details{
   height: 60px;
@@ -42,7 +42,7 @@
 
 }
 .sidebar .logo-details .logo_name:hover{
-  color: chartreuse;
+  color: rgba(242, 0, 255, 0.86);
   }
 
 .sidebar.open .logo-details .icon,
@@ -242,9 +242,8 @@ margin-right: 10px;
 }
 .home-section{
   position: relative;
-  
   min-height: 100vh;
-  top: 0;
+  top: 83px;
   left: 78px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
@@ -276,18 +275,15 @@ margin-right: 10px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  
-  margin-top: 2%;
-  margin-left: 26%;
-  margin-right: 25%;
-  margin-bottom: 1%;
-  
-  
+  margin-top: 3%;
+  margin-left: 38%;
+  margin-right: 26%;
+  margin-bottom: 3%;
   background-color: #ffffff;
   background-clip: border-box;
-  border: 1px solid rgba(83, 255, 35, 0.671);
-  border-radius:10px;
-  /* align-items: center; */
+  border: 2px solid rgba(83, 255, 35, 0.671);
+  border-radius: 257px;
+  /* align-items: center;*/
 }
 
 
@@ -298,25 +294,21 @@ margin-right: 10px;
   padding: 23px;
 }
 .card2 {
-    position: relative;
+      position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display:flex;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    
-    
-    margin-left: 26%;
-    margin-right: 25%;
+    margin-left: 27%;
+    margin-right: 22%;
     margin-bottom: 5%;
-    
     background-color: #ffffff;
     background-clip: border-box;
     border: 1px solid rgba(83, 255, 35, 0.671);
-    border-radius:10px;
-    
+    border-radius: 57px;
   }
   .card2-body {
   
