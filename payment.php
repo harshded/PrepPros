@@ -15,7 +15,7 @@
 /* Apply some basic styles to the body */
 body {
     font-family: Arial, sans-serif;
-    background-image:url("./images/green.jpg") ;
+    background: linear-gradient(to bottom, purple 0%, #c054ff 100%) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ input[type="email"],
 
 /* Style the submit button */
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: gold;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -75,7 +75,7 @@ button[type="submit"]:hover {
 
 /* Style error messages */
 #error-message {
-    color: #ff0000;
+    color: purple;
     margin-top: 10px;
 }
 
