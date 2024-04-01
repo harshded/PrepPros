@@ -74,7 +74,7 @@ if (isset($_SESSION['id'])) {
             <span class="tooltip">My Courses</span>
         </li>
         <li>
-            <a href="<?php echo $base_url; ?>/Dash_functions/view_orders.php">
+            <a href="<?php echo $base_url; ?>premium.php">
                 <i class="bx bx-chat"></i>
                 <span class="links_name"> Buy Premium</span>
             </a>
