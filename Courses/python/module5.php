@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/quiz_instruction.css">
 </head>
 
 <body>
@@ -75,7 +76,24 @@ sum3 </span><span class="pun">=</span><span class="pln"> add</span><span class="
 1. <strong>Built-in functions</strong>: These functions are predefined in Python and we need not to declare these functions before calling them. We can freely invoke them as and when needed.<br>
 2. <strong>User defined functions</strong>: The functions which we create in our code are user-defined functions. The add() function that we have created in above examples is a user-defined function.</p>
 <p>We will cover more about these function types in the separate guides.</p>
-
+<br>
+<!-- quiz  -->
+<article class="cta" style="	justify-content: center;
+	align-items: center;">
+	<!-- <img src='https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400' alt='Bluetit'> -->
+	<center?><div class="cta__text-column" >
+		<h2>
+			Take Quiz on Module 5</h2>
+			<ul>
+				<li>This quiz consists of 10 questions based on the content covered in the Python course.</li>
+				<li>Each question has a 20-second time limit.</li>
+				<li>Once an answer is submitted, you cannot revisit or change it.</li>
+				<li>We wish you the best of luck with your quiz!</li>
+			  </ul>
+		<center><a href="quiz.php?module=cpp_1" >Start Quiz</a></center>
+	</div></center>
+</article>
+<br>
 <!-- YARPP List -->
 <article class="post-8365 post type-post status-publish format-standard category-python-tutorial entry" aria-label="Python Recursion" itemscope="" itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline"></h1>
 

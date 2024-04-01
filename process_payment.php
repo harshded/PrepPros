@@ -1,39 +1,31 @@
 <?php
+// Start the session (if not already started)
+session_start();
 
-require __DIR__ . "/vendor/autoload.php";
+// Include database connection file
+include_once "db_connect.php";
 
-$stripe_secret_key = "sk_test_51OlBkrSF7CoYVXRggQ4lpiAz6wy5dAXsUYFZ14TOvEaFEiRF9rsZt3ZFRQkPgp71JY3yuvRe2Z0YQAmwvjHoeXMd00Fvopui3X";
+// Check if the user is logged in
+if (!isset($_SESSION['user_id'])) {
+    // If not logged in, redirect to login page or handle the situation as per your application logic
+    header("Location: login.php");
+    exit; // Stop further execution
+}
 
-\Stripe\Stripe::setApiKey($stripe_secret_key);
+// Retrieve user ID from session
+$user_id = $_SESSION['user_id']; // Assuming you store user ID in the session upon login
 
-$checkout_session = \Stripe\Checkout\Session::create([
-    "mode" => "payment",
-    "success_url" => "http://localhost/avi/preppros/sucess.php",
-    "cancel_url" => "http://localhost/avi/preppros/payment.php",
-    "locale" => "auto",
-    "line_items" => [
-        [
-            "quantity" => 1,
-            "price_data" => [
-                "currency" => "usd",
-                "unit_amount" => 2000,
-                "product_data" => [
-                    "name" => "T-shirt"
-                ]
-            ]
-        ],
-        [
-            "quantity" => 2,
-            "price_data" => [
-                "currency" => "usd",
-                "unit_amount" => 700,
-                "product_data" => [
-                    "name" => "Hat"
-                ]
-            ]
-        ]        
-    ]
-]);
+// Update user_type to 'premium' for the user who made the payment
+$sql = "UPDATE users SET user_type = 'premium' WHERE id = $user_id";
 
-http_response_code(303);
-header("Location: " . $checkout_session->url);
+if (mysqli_query($conn, $sql)) {
+    // Payment processed successfully
+    echo "Payment processed successfully!";
+} else {
+    // Payment processing failed
+    echo "Error processing payment: " . mysqli_error($conn);
+}
+
+// Close database connection
+mysqli_close($conn);
+?>

@@ -116,8 +116,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 										<div class="overlay"></div>
 										<h2>Find the Right career for you in Tech</h2>
 										<p>Find your personalised career roadmap in simple and easy 3 steps</p>
-										<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Generate my
-												roadmap</a>
+										<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3" onclick="return checkUserType();">Generate my roadmap</a></p>
 										</p>
 									</div>
 								</div>
@@ -142,7 +141,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								</div>
 							</a>
 
-							<a href="#" class="course-category img d-flex align-items-center justify-content-center"
+							<a href="<?php echo $base_url;?>Courses/technical.php" class="course-category img d-flex align-items-center justify-content-center"
 								style="background-image: url(images/work-9.jpg);">
 								<div class="text w-100 text-center">
 									<h3>Technical Round</h3>
@@ -150,17 +149,17 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 								</div>
 							</a>
 
-							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center"
-								style="background-image: url(images/work-2.jpg);">
+							<a href="interview.php" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url(images/work-2.jpg);" onclick="return checkUserType()">
+								
 								<div class="text w-100 text-center">
 									<h3>HR Round </h3>
 									<span>Know more</span>
-									<br><svg width="30" height="30" color="white" xmlns="http://www.w3.org/2000/svg"
+									<!-- <br><svg width="30" height="30" color="white" xmlns="http://www.w3.org/2000/svg"
 										fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
 										class="w-6 h-6">
 										<path stroke-linecap="round" stroke-linejoin="round"
 											d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-									</svg>
+									</svg> -->
 								</div>
 							</a>
 						</div>
@@ -184,7 +183,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									
 								</div>
 								<div class="btn">
-									<a href="java.html"><button class="buy-btn">Start Now</button></a>
+									<a href="courses/Java/java.php"><button class="buy-btn">Start Now</button></a>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -426,6 +425,68 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 			data: pieChartData
 		});
 	</script>
+	<!-- Include SweetAlert library -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script>
+    function checkUserType() {
+        // Assuming you have stored the user type in a session variable named 'user_type'
+        var userType = "<?php echo isset($_SESSION['user_type']) ? $_SESSION['user_type'] : 'normal'; ?>";
+
+        // Check if the user is a premium user
+        if (userType === 'premium') {
+            return true; // Allow the user to access the HR Round page
+        } else {
+            // Display SweetAlert message for normal users
+            Swal.fire({
+                title: "Upgrade to Premium",
+                text: "You need to upgrade to premium to access the HR Round.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Upgrade"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect the user to the payment page
+                    window.location.href = "payment.php";
+                }
+            });
+            return false; // Prevent the default link action
+        }
+    }
+</script>
+
+<script>
+    function checkUserType() {
+        // Assuming you have stored the user type in a session variable named 'user_type'
+        var userType = "<?php echo isset($_SESSION['user_type']) ? $_SESSION['user_type'] : 'normal'; ?>";
+
+        // Check if the user is a premium user
+        if (userType === 'premium') {
+            // Redirect the premium user to the roadmap generation page
+            window.location.href = "roadmap/ContactFrom_v1/roadmap.php";
+        } else {
+            // Display SweetAlert message for normal users
+            Swal.fire({
+                title: "Upgrade to Premium",
+                text: "You need to upgrade to premium to access the roadmap generation feature.",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Upgrade"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect the user to the payment page
+                    window.location.href = "payment.php";
+                }
+            });
+        }
+    }
+</script>
+
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>

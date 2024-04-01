@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once('db_connect.php');
-
 // Process payment using Stripe or any other payment processing library
 
 // After successful payment processing:
@@ -31,3 +30,5 @@ if ($stmt->execute()) {
     echo "Error updating user type: " . $stmt->error;
 }
 ?>
+</body>
+</html>
