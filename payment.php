@@ -15,7 +15,7 @@
 /* Apply some basic styles to the body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, purple 0%, #c054ff 100%) ;
+    background-image:url("./images/green.jpg") ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ input[type="email"],
 
 /* Style the submit button */
 button[type="submit"] {
-    background-color: gold;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -75,7 +75,7 @@ button[type="submit"]:hover {
 
 /* Style error messages */
 #error-message {
-    color: purple;
+    color: #ff0000;
     margin-top: 10px;
 }
 
@@ -128,3 +128,5 @@ You are making payment of amount ₹6000
     <script src="./js/stripe.js"></script>
 </body>
 </html>
+
+
