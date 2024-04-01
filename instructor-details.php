@@ -44,7 +44,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
                 <div class="text mb-4 text-md-center">
                   <h3>Amruta Jog</h3>
                   <span class="position mb-2">C/C++</span>
-                  <a href="blog.html"></a><span class="position mb-2">Book a session</span></a>
+                  <a href="/PrepPros/Dash_functions/view_profile.php"><span class="position mb-2">Book a session</span></a>
                   <div class="faded">
                   </div>
                 </div>
@@ -80,7 +80,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
                 <div class="text mb-4 text-md-center">
                   <h3>Bageshree Deo</h3>
                   <span class="position mb-2">Python</span>
-                  <a href="blog.html"><span class="position mb-2">Book a session</span></a>
+                  <a href="/PrepPros/Dash_functions/view_profile.php"><span class="position mb-2">Book a session</span></a>
                   <div class="faded">
                   </div>
                 </div>
@@ -316,12 +316,6 @@ include  dirname(__DIR__).'/preppros/includes/footer.php';
 ?>
   <!-- End of footer -->
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg></div>
 
 
   <script src="js/jquery.min.js"></script>

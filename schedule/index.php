@@ -1,4 +1,14 @@
-<?php require_once('db-connect.php') ?>
+<?php
+$host     = 'localhost';
+$username = 'root';
+$password = '';
+$dbname   ='dummy_db';
+
+$conn = new mysqli($host, $username, $password, $dbname);
+if(!$conn){
+    die("Cannot connect to the database.". $conn->error);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +59,7 @@
             <div class="col-md-3">
                 <div class="cardt rounded-0 shadow">
                     <div class="card-header bg-gradient bg-primary text-light">
-                        <h5 class="card-title">Schedule Form</h5>
+                        <h5 class="card-title">Booking Details</h5>
                     </div>
                     <div class="card-body">
                         <div class="container-fluid">
@@ -57,26 +67,22 @@
                                 <input type="hidden" name="id" value="">
                                 <div class="form-group mb-2">
                                     <label for="title" class="control-label">Title</label>
-                                    <input type="text" class="form-control form-control-sm rounded-0" name="title" id="title" required>
+                                    <input type="text" class="form-control form-control-sm rounded-0" name="title" id="title" required readonly>
                                 </div>
                                 <div class="form-group mb-2">
-                                    <label for="description" class="control-label">Description</label>
-                                    <textarea rows="3" class="form-control form-control-sm rounded-0" name="description" id="description" required></textarea>
+                                    <label for="student_name" class="control-label">Name</label>
+                                    <input type="student_name" class="form-control form-control-sm rounded-0" name="student_name" id="student_name" required>
                                 </div>
                                 <div class="form-group mb-2">
-                                    <label for="start_datetime" class="control-label">Start</label>
-                                    <input type="datetime-local" class="form-control form-control-sm rounded-0" name="start_datetime" id="start_datetime" required>
-                                </div>
-                                <div class="form-group mb-2">
-                                    <label for="end_datetime" class="control-label">End</label>
-                                    <input type="datetime-local" class="form-control form-control-sm rounded-0" name="end_datetime" id="end_datetime" required>
+                                    <label for="email" class="control-label">Email</label>
+                                    <input type="email" class="form-control form-control-sm rounded-0" name="email" id="email" required></input>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="card-footer">
                         <div class="text-center">
-                            <button class="btn btn-primary btn-sm rounded-0" type="submit" form="schedule-form"><i class="fa fa-save"></i> Save</button>
+                            <button class="btn btn-primary btn-sm rounded-0" type="submit" form="schedule-form"><i class="fa fa-save"></i> Book</button>
                             <button class="btn btn-default border btn-sm rounded-0" type="reset" form="schedule-form"><i class="fa fa-reset"></i> Cancel</button>
                         </div>
                     </div>
@@ -84,6 +90,13 @@
             </div>
         </div>
     </div>
+    <div class="text-center">
+    <a href="/PrepPros/Dash_functions/view_profile.php" class="btn btn-primary btn-sm rounded-0">
+    <i class="fa fa-arrow"></i> Back to Dashboard
+</a>
+
+
+</div>
     <!-- Event Details Modal -->
     <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
         <div class="modal-dialog modal-dialog-centered">
@@ -108,8 +121,7 @@
                 </div>
                 <div class="modal-footer rounded-0">
                     <div class="text-end">
-                        <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit" data-id="">Edit</button>
-                        <button type="button" class="btn btn-danger btn-sm rounded-0" id="delete" data-id="">Delete</button>
+                        <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit" data-id="">BOOK</button>
                         <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>

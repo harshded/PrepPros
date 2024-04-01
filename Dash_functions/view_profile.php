@@ -7,7 +7,23 @@ include  dirname(__FILE__) .'/../includes/head.php';
   <?php
 	include dirname(__FILE__) .'/../includes/header.php';
 	?> 
-  
+<?php
+$host2 = 'localhost';
+$username2 = 'root'; // Change this to your database username
+$password2 = ''; // Change this to your database password
+$dbname2 = 'preppros';
+
+// Establish connection to the second database
+$conn2 = new mysqli($host2, $username2, $password2, $dbname2);
+if ($conn2->connect_error) {
+    die("Connection failed: " . $conn2->connect_error);
+}
+
+// Fetching data based on the current user's user_id
+$user_id = $_SESSION['id'];
+$sql2 = "SELECT meeting_link, start_datetime FROM schedule_list WHERE user_id = '$user_id'";
+$result2 = $conn2->query($sql2);
+?>
   <?php
 
 
@@ -105,16 +121,6 @@ if (isset($_SESSION['user_type'])) {
         <hr>
         <div class="row  text-center">
           <div class="col-sm-3">
-            <h6 class="mb-0">Address</h6>
-          </div>
-          <div class="col-sm-6 text-secondary">
-          <?php echo @$row['address']; ?>
-          <?php echo $_SESSION['id']; ?>
-          </div>
-        </div>
-        <hr>
-        <div class="row  text-center">
-          <div class="col-sm-3">
             <h6 class="mb-0">Account Created</h6>
           </div>
           <div class="col-sm-6 text-secondary">
@@ -122,6 +128,36 @@ if (isset($_SESSION['user_type'])) {
          
           </div>
         </div>
+        <hr>
+            <?php if ($result2->num_rows > 0) : ?>
+                <div class="row text-center">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Meeting Link</h6>
+                    </div>
+                    <div class="col-sm-6 text-secondary">
+                        <?php while ($row2 = $result2->fetch_assoc()) : ?>
+                            <div><?php echo $row2['meeting_link']; ?></div>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Start Datetime</h6>
+                    </div>
+                    <div class="col-sm-6 text-secondary">
+                        <?php
+                        // Reset the pointer of the result set back to the beginning
+                        $result2->data_seek(0);
+                        while ($row2 = $result2->fetch_assoc()) : ?>
+                            <div><?php echo $row2['start_datetime']; ?></div>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            <?php else : ?>
+                <p>No meeting link and start datetime found for the current user.</p>
+            <?php endif; ?>
+        
       </div>
     </div>
   </section>
