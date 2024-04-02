@@ -6,14 +6,16 @@ include 'config.php';
 // Redirect if the user is already logged in
 if (isset($_SESSION['id']) && !empty($_SESSION['id'])) {
     header("Location: ../home.php");
-    die();
+    exit();
 }
 
 $msg = "";
 $dashboardUrls = [
-    'admin' => '../home.php',
+    'admin' => '../Dash_functions/view_profile.php',
     'user' => '../home.php',
     'premium' => '../home.php',
+    'instructor' => '../Dash_functions/view_profile.php',
+
 ];
 
 if (isset($_GET['verification'])) {
@@ -21,13 +23,18 @@ if (isset($_GET['verification'])) {
     $result = mysqli_query($conn, "SELECT * FROM users WHERE code='$verificationCode'");
 
     if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
         $query = mysqli_query($conn, "UPDATE users SET code='' WHERE code='$verificationCode'");
 
         if ($query) {
-            $msg = "<div class='alert alert-success'>Account verification has been successfully completed.</div>";
+            // User is successfully verified, store verification in session
+            $_SESSION['verification_done'] = true;
+            $_SESSION['verification_user_id'] = $row['id'];
+            header("Location: login.php");
+            exit();
         }
     } else {
-        header("Location: ../home.php");
+        header("Location: ../index.php");
         exit();
     }
 }
@@ -65,6 +72,7 @@ if (isset($_POST['submit'])) {
                     exit();
                 } else {
                     echo "Invalid user_type";
+                    exit();
                 }
             } else {
                 $msg = "<div class='alert alert-danger'>Incorrect Email or Password. Try again.</div>";

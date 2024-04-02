@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<?php
-include  dirname(__FILE__) . '/../includes/head.php';
+ <?php
+include  dirname(__FILE__) .'/../includes/head.php';
 ?>
-
-<body class="goto-here">
-
+  <body class="goto-here">
+		
   <?php
-  include dirname(__FILE__) . '/../includes/header.php';
-  ?>
-
+	include dirname(__FILE__) .'/../includes/header.php';
+	?> 
+  
   <?php
 
 
-  include '../functions/user_type.php';
+include './functions/user_type.php';
 
-  // Determine the dashboard file based on the user type
-  if (isset($_SESSION['user_type'])) {
-    $userType = $_SESSION['user_type'];
-
-    switch ($userType) {
+// Determine the dashboard file based on the user type
+if (isset($_SESSION['user_type'])) {
+  $userType = $_SESSION['user_type'];
+  
+  switch ($userType) {
       case "premium":
         include('./../premium-sidebar.php'); // Include the customer dashboard
-        break;
+          break;
       case "user":
         include('./../user-sidebar.php'); // Include the admin dashboard
-        break;
+          break;
       case "admin":
         include('./../admin-sidebar.php'); // Include the farmer dashboard
-        break;
+          break;
+      case "instructor":
+        include('./../instructor-sidebar.php'); // Include the farmer dashboard
+          break;
       default:
-        echo "Invalid user type.";
-        // Handle the case when the user type is not recognized
-        break;
-    }
-  } else {
-    echo "User type not set.";
+          echo "Invalid user type.";
+          // Handle the case when the user type is not recognized 
+          break;
   }
+} else {
+  echo "User type not set.";
+}
+?>
 
 
 
 
-  ?>
 
+<section class="home-section">
 
-
-
-
-  <section class="home-section">
-
-    <div class="card1">
-      <div class="card1-body">
-      <div class="card1-body">
+    <div class="card2">
+      <div class="card2-body">
+      <!-- <div class="card1-body"> -->
 
         <!-- <div class="d-flex flex-column align-items-center text-center"> -->
         <!-- 
@@ -111,21 +109,23 @@ include  dirname(__FILE__) . '/../includes/head.php';
     </div>
     </div>
     </div>
-    <div class="card1">
-      <!-- <div class="card1-body"> -->
+    <div class="card2">
+      <div class="card2-body">
 
         <!-- <div class="card1-body"> -->
-        <!-- <p><a href="<?php echo $base_url; ?>/Dash_functions/add_address.php"><input type="submit" value="Add New Address" class="btn btn-primary py-3 px-4"> </a></p> -->
+        <p><center><a href="<?php echo $base_url; ?>login&signup/reset-password.php"><input type="submit" value="Change Password" class="btn btn-primary py-3 px-4"> </a></p>
+        
 
           <h1 class="mb-4 billing-heading">Edit Profile</h1>
+</center>
           <!-- <div class="text-center text-sm-right">
                     <span class="badge badge-secondary">administrator</span>
                     <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
                   </div> -->
 
-          <!-- <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs">
                 <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
-              </ul> -->
+              </ul>
 
           <div class="tab-content pt-3">
             <div class="tab-pane active">
@@ -135,8 +135,8 @@ include  dirname(__FILE__) . '/../includes/head.php';
                     <div class="row">
                       <div class="col">
                         <div class="form-group">
-                          <label>Full Name</label>
-                          <input type="text" id="name" name="name" class="form-control" required value="<?php echo htmlspecialchars($row['full_name']); ?>">
+                        <h4 class="mb-4 billing-heading">Full Name: </h4>            
+                         <input type="text" id="name" name="name" class="form-control" required value="<?php echo htmlspecialchars($row['full_name']); ?>">
                         <!-- </div>
                       </div>
                       <div class="col">
@@ -149,8 +149,7 @@ include  dirname(__FILE__) . '/../includes/head.php';
                     <div class="row">
                       <div class="col">
                         <div class="form-group">
-                          <label>Email</label>
-                          <input type="email" id="email" name="email" class="form-control" required value="<?php echo htmlspecialchars($row['email']); ?>">
+                        <h4 class="mb-4 billing-heading">E-Mail:</h4>                          <input type="email" id="email" name="email" class="form-control" required value="<?php echo htmlspecialchars($row['email']); ?>">
                         </div>
                       </div>
                     </div>

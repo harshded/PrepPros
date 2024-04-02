@@ -439,3 +439,53 @@ p.copy-footer-29 a:hover {
 
 /*-- //responsive design --*/
 /*-- //form styling --*/
+
+/* Style the radio container */
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the radio buttons */
+  .form-group input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the radio label */
+  .form-group label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 15px;
+  }
+  
+  /* Create a custom radio button */
+  .form-group label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Style the checked radio button */
+  .form-group input[type="radio"]:checked + label::before {
+    background-color: #00c16e;
+    border-color: #00c16e;
+  }
+  
+  /* Style the radio label text */
+  .form-group label::after {
+    content: attr(data-label);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #333;
+  }
+  
+  

@@ -19,16 +19,15 @@
   }
   
   .card ul {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background:rgb(165 194 225 / 25%);
-    position: absolute;
+    background: rgb(165 194 225 / 77%);
+    position: fixed;
     top: 4rem;
-    right: -4rem;
-    border-radius: 10px;
-    padding: 10px 50px 10px 20px;
+    right: 5rem;
+    border-radius: 26px;
+    padding: 8px 42px 21px 18px;
     color: black;
+    margin: 10px;
+    align-content: center;
   }
   .card ul li {
     list-style-type: none !important;

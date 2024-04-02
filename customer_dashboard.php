@@ -2,7 +2,7 @@
 
 <?php
 if($_SESSION['user_type'] != 'user'){
-    header("Location: ./index.php");
+    header("Location: ./home.php");
  
 }
 include dirname(__FILE__).'/includes/head.php';

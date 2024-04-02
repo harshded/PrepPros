@@ -13,7 +13,7 @@ if (isset($_SESSION['id'])) {
 <div class="sidebar">
     <div class="logo-details">
         <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
-        <a href="<?php echo $base_url;?>/index.php" class="logo_name">
+        <a href="<?php echo $base_url;?>/ome.php" class="logo_name">
             <div class="logo_name">PrepPros</div>
         </a>
         <i class="bx bx-menu" id="btn"></i>
@@ -23,8 +23,7 @@ if (isset($_SESSION['id'])) {
             <div class="profile-details">
                 <img src="<?= 'data:image/jpeg;base64,' . base64_encode($row["profile_pic"]) ?>" onError="this.onerror=null;this.src='../images/user.png';" alt="" />
                 <div class="name_job">
-                    <div class="name"><?php echo $row['full_name']; ?></div>
-                    <div class="job"><?php echo $_SESSION['user_name']; ?></div>
+                    <div class="name">Welcome <?php echo $row['full_name']; ?></div>
                 </div>
             </div>
 
@@ -79,6 +78,13 @@ if (isset($_SESSION['id'])) {
             </a>
             <span class="tooltip">My Courses</span>
         </li>
+        <li>
+          <a href="<?php echo $base_url; ?>Dash_functions/progress_pie.php">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">My Chart</span>
+          </a>
+          <span class="tooltip">My Chart</span>
+        </li>
          <!-- <li>
           <a href="<?php echo $base_url; ?>/Dash_functions/show_addresses.php">
             <i class="bx bxs-edit-location"></i>
@@ -103,6 +109,13 @@ if (isset($_SESSION['id'])) {
           <span class="tooltip">Analytics</span>
         </li> -->
         <li>
+          <a href="<?php echo $base_url; ?>/Dash_functions/mycode.php">
+            <i class="bx bxs-edit-location"></i>
+            <span class="links_name">My Code</span>
+          </a>
+          <span class="tooltip">My Code</span>
+        </li>
+        <li>
             <a href="<?php echo $base_url; ?>Dash_functions/view_settings.php">
                 <i class="bx bx-cog"></i>
                 <span class="links_name">Setting</span>
@@ -110,7 +123,7 @@ if (isset($_SESSION['id'])) {
             <span class="tooltip">Setting</span>
         </li>
         <li>
-            <a href="<?php echo $base_url; ?>/logout.php">
+            <a href="<?php echo $base_url; ?>login&signup/logout.php">
                 <i class="bx bx-log-out" id="log_out"></i>
                 <span class="links_name">Logout</span>
             </a>

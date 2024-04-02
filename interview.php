@@ -42,8 +42,8 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
             <br>
             <h4>As all hirings are going remote. Equip yourself with a completely online mock interview experience.
             </h4>
-            <p class="mb-4"><a href="./schedule" class="btn btn-primary px-4 py-3">Book a slot</a><a
-                href="instructor-details.php" class="btn btn-primary ml-5 px-4 py-3">Know your mentors</a></p>
+            <p class="mb-4"><a href="./schedule" class="btn btn-primary px-4 py-3">Book a slot</a>
+            <!-- <a href="instructor_details.php" class="btn btn-primary ml-5 px-4 py-3">Know your mentors</a></p> -->
           </div>
         </div>
 
@@ -57,7 +57,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
               <h4>Your candidature is seen through a real mentors' eyes and thus the feedback from these experts is
                 authentic and actionable.
               </h4>
-              <p class="mb-4"><a href="instructor-details.php" class="btn btn-primary px-4 py-3">Know your mentors</a>
+              <p class="mb-4"><a href="instructor_details.php" class="btn btn-primary px-4 py-3">Know your mentors</a>
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
                 <h4 class="ml-4" style="color: white;">Partner with us and help us be the extra helping hands in your student placement process. We provide bulk interviewing solutions to help your students in their placement process.</h4>
                 <h4 class="ml-4" style="color: white;">Partner with us and help us be a part of your students success. We provide bulk interviewing solutions to help your students in their placement process
                 </h4>
-                <p class="mt-4 ml-3"><a href="login&signup/register.php" class="btn btn-primary px-4 py-3">Sign up as a mentor</a>
+                <!-- <p class="mt-4 ml-3"><a href="<?php echo $base_url; ?>login&signup/register.php" class="btn btn-primary px-4 py-3">Sign up as a mentor</a> -->
                 </p>
               </div>
             </div>

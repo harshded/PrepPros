@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>StudyLab - Free Bootstrap 4 Template by Colorlib</title>
+    <title>PrepPros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -40,7 +40,7 @@
          <li class="nav-item"><a href="#Premium" class="nav-link">Premium</a></li>
          <li class="nav-item"><a href="#FAQ" class="nav-link">FAQ</a></li>
          <li class="nav-item"><a href="login&signup/login.php" class="nav-link">Login</a></li>
-         <li class="nav-item"><a href="login&signup/register.php" class="nav-link">Sign In</a></li>
+         <li class="nav-item"><a href="login&signup/register.php" class="nav-link">Sign Up</a></li>
      </ul>
  </div>
 </div>

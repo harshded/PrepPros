@@ -17,7 +17,7 @@ if($_SESSION['user_type'] != 'premium'){
 <div class="sidebar">
       <div class="logo-details">
         <!-- <i class="bx bxl-c-plus-plus icon"></i> -->
-        <a href="<?php echo $base_url;?>/index.php" class="logo_name">
+        <a href="<?php echo $base_url;?>home.php" class="logo_name">
         <div  class="logo_name">PrepPros</div></a>
                 <i class="bx bx-menu" id="btn"></i>
       </div>
@@ -26,8 +26,7 @@ if($_SESSION['user_type'] != 'premium'){
           <div class="profile-details">
             <img src="<?= 'data:image/jpeg;base64,' . base64_encode($row["profile_pic"]) ?>" onError="this.onerror=null;this.src='../images/user.png';" alt="profileImg" />
             <div class="name_job">
-              <div class="name"><?php echo $row['full_name']; ?></div>
-              <div class="job"><?php echo $_SESSION['user_name'];?></div>
+              <div class="name">Welcome <?php echo $row['full_name']; ?></div>
             </div>
           </div>
          
@@ -110,7 +109,7 @@ if($_SESSION['user_type'] != 'premium'){
           <span class="tooltip">Setting</span>
         </li>
         <li>
-        <a href="<?php echo $base_url; ?>/logout.php">
+        <a href="<?php echo $base_url; ?>login&signup/logout.php">
           <i class="bx bx-log-out" id="log_out"></i>
             <span class="links_name">Logout</span>
           </a>

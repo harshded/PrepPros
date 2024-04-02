@@ -193,7 +193,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									</button>
 								</div></a>
 							</section>
-							<section class="card1 card-blue">
+							<section class="card1 card-blue"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">
 								<div class="product-image">
 									<img src="images/work-2.png" alt="OFF-white Blue Edition" draggable="false" />
 								</div>
@@ -211,7 +211,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 										</svg>
 									</button>
 								</div>
-							</section>
+							</section></a>
 							
 							
 						</section>
@@ -219,7 +219,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 
 					<div class="row">
 						<section class="container1">
-							<section class="card1" style="background-color: rgb(248 255 168);">
+							<section class="card1" style="background-color: rgb(248 255 168);"><a style="color: white;" href="<?php echo $base_url;?>Courses/c/c.php">
 								<div class="product-image">
 									<center><img src="images/c.webp" alt="OFF-white Red Edition" draggable="false" width=250 height=250 /></center>
 								</div>
@@ -228,7 +228,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 									
 								</div>
 								<div class="btn">
-									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">Start Now</a></button>
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/c/c.php">Start Now</a></button>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -237,8 +237,8 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 										</svg>
 									</button>
 								</div>
-							</section>
-							<section class="card1 card-blue" style="background-color: rgb(255 168 168)">
+							</section></a>
+							<section class="card1 card-blue" style="background-color: rgb(255 168 168)"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">
 								<div class="product-image">
 									<center><img src="images/cpp.webp" alt="OFF-white Blue Edition" draggable="false" width=250 height=250/></center>
 								</div>
@@ -256,7 +256,7 @@ include  dirname(__DIR__).'/preppros/progress_pie.php';
 										</svg>
 									</button>
 								</div>
-							</section>
+							</section></a>
 							
 							
 						</section>

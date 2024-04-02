@@ -1,4 +1,56 @@
-<?php
+<!DOCTYPE html>
+ <?php
+include  dirname(__FILE__) .'/../includes/head.php';
+?>
+  <body class="goto-here">
+		
+  <?php
+	include dirname(__FILE__) .'/../includes/header.php';
+	?> 
+  
+  <?php
+
+
+include './functions/user_type.php';
+
+// Determine the dashboard file based on the user type
+if (isset($_SESSION['user_type'])) {
+  $userType = $_SESSION['user_type'];
+  
+  switch ($userType) {
+      case "premium":
+        include('./../premium-sidebar.php'); // Include the customer dashboard
+          break;
+      case "user":
+        include('./../user-sidebar.php'); // Include the admin dashboard
+          break;
+      case "admin":
+        include('./../admin-sidebar.php'); // Include the farmer dashboard
+          break;
+      case "instructor":
+        include('./../instructor-sidebar.php'); // Include the farmer dashboard
+          break;
+      default:
+          echo "Invalid user type.";
+          // Handle the case when the user type is not recognized 
+          break;
+  }
+} else {
+  echo "User type not set.";
+}
+?>
+
+
+
+
+
+<section class="home-section">
+<div class="card3">
+<div class="card3-body">
+
+
+    
+    <?php
 
 // Directory where solved questions are stored
 $solvedQuestionsDir = 'C:\wamp64\www\PrepPros\ide\temp';
