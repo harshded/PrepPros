@@ -46,8 +46,6 @@ if (isset($_SESSION['user_type'])) {
 
 <section class="home-section">
 <div class="card3">
-<div class="card3-body">
-
 
 
 <?php
@@ -59,7 +57,7 @@ $solvedQuestionsDir = 'C:\wamp64\www\preppros\ide\temp';
 $allowedExtensions = array('py', 'cpp', 'c', 'java');
 
 // Display the folder name
-echo "<h2>Solved Questions Folder: $solvedQuestionsDir</h2>";
+echo "<h2 style='text-align: center;'>Solved Questions Folder: $solvedQuestionsDir</h2>";
 
 // Loop through each allowed extension
 foreach ($allowedExtensions as $extension) {
@@ -76,9 +74,10 @@ foreach ($allowedExtensions as $extension) {
             $lines = explode("\n", $content);
             
             // Display the filename
-            echo "<h3>Solved Question from $file:</h3>";
+            echo "<h3 style='text-align: center;'>Solved Question from $file:</h3>";
             
             // Display the content with line numbering and CSS styling
+            echo '<div style="margin: 0 auto; text-align: left;">'; // Center align content
             echo '<pre style="background-color: #000; padding: 10px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto;">';
             echo '<code style="font-family: Consolas, Monaco, monospace; font-size: 14px; color: #fff;">';
             foreach ($lines as $lineNumber => $line) {
@@ -89,8 +88,34 @@ foreach ($allowedExtensions as $extension) {
             }
             echo '</code>';
             echo '</pre>';
+            echo '</div>';
+            
+            // Add symbols for right and wrong actions
+            echo '<div style="text-align: center; margin-top: 10px;">'; // Center align buttons
+            echo '  <button onclick="showRightAlert()">✅ Right</button>';
+            echo '  <button onclick="showWrongAlert()">❌ Wrong</button>';
+            echo '</div>';
         }
     }
 }
 
 ?>
+
+<!-- JavaScript for SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function showRightAlert() {
+        Swal.fire({
+            icon: "success",
+            title: "Correct!",
+            text: "Your answer is right ",
+        });
+    }
+    function showWrongAlert() {
+        Swal.fire({
+            icon: "error",
+            title: "Wrong!",
+            text: "Need to work on this ",
+        });
+    }
+</script>

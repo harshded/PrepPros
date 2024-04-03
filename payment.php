@@ -15,7 +15,7 @@
 /* Apply some basic styles to the body */
 body {
     font-family: Arial, sans-serif;
-    background-image:url("./images/green.jpg") ;
+    background: linear-gradient(to bottom, purple 0%, #c054ff 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,5 +128,3 @@ You are making payment of amount ₹6000
     <script src="./js/stripe.js"></script>
 </body>
 </html>
-
-

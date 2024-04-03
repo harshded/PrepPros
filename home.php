@@ -20,38 +20,16 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 ?>
 
 
-  <div class="hero-wrap js-fullheight" style="background-image: url('images/landingpage.png');">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-        <div class="col-md-7 ftco-animate">
-          <span class="subheading">Welcome to StudyLab</span>
-          <h1 class="mb-4">We Are Online Platform For Make Learn</h1>
-          <p class="caps">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          <p class="mb-0"><a href="#" class="btn btn-primary">Our Course</a> <a href="#" class="btn btn-white">Learn
-              More</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="ftco-section ftco-no-pb ftco-no-pt">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7"></div>
-        <div class="col-md-5 order-md-last">
-          <!-- <div class="login-wrap p-4 p-md-5"> -->
-          <!-- </div> -->
-        </div>
-      </div>
-    </div>
+<section class="hero-wrap hero-wrap-2">
+    <video autoplay loop muted playsinline style="height: 120%; width: 100%;">
+      <source src="images/landing.mp4" type="video/mp4">
+    </video>
   </section>
 
   <section class="ftco-section">
-    <div class="container">
+    <div class="cmd-4 container">
       <div class="row justify-content-center pb-4">
         <div class="col-md-12 heading-section text-center ftco-animate">
-          <span class="subheading">Start Learning Today</span>
           <h2 class="mb-4">Browse Online Course Category</h2>
         </div>
       </div>
@@ -112,7 +90,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 									
 								</div>
 								<div class="btn">
-									<a href="java.html"><button class="buy-btn">Start Now</button></a>
+									<a href="courses/Java/java.php"><button class="buy-btn">Start Now</button></a>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -122,7 +100,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 									</button>
 								</div></a>
 							</section>
-							<section class="card1 card-blue">
+							<section class="card1 card-blue"><a style="color: white;" href="<?php echo $base_url;?>Courses/python/python.php">
 								<div class="product-image">
 									<img src="images/work-2.png" alt="OFF-white Blue Edition" draggable="false" />
 								</div>
@@ -131,7 +109,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 									
 								</div>
 								<div class="btn">
-									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">Start Now</a></button>
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/python/python.php">Start Now</a></button>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -140,7 +118,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 										</svg>
 									</button>
 								</div>
-							</section>
+							</section></a>
 							
 							
 						</section>
@@ -148,7 +126,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 
 					<div class="row">
 						<section class="container1">
-							<section class="card1" style="background-color: rgb(248 255 168);">
+							<section class="card1" style="background-color: rgb(248 255 168);"><a style="color: white;" href="<?php echo $base_url;?>Courses/c/c.php">
 								<div class="product-image">
 									<center><img src="images/c.webp" alt="OFF-white Red Edition" draggable="false" width=250 height=250 /></center>
 								</div>
@@ -157,7 +135,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 									
 								</div>
 								<div class="btn">
-									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/Java/java.php">Start Now</a></button>
+									<button class="buy-btn"><a style="color: white;" href="<?php echo $base_url;?>Courses/c/c.php">Start Now</a></button>
 									<button class="fav">
 										<svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 0 32 32" stroke="#000" stroke-linecap="round"
@@ -166,8 +144,8 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 										</svg>
 									</button>
 								</div>
-							</section>
-							<section class="card1 card-blue" style="background-color: rgb(255 168 168)">
+							</section></a>
+							<section class="card1 card-blue" style="background-color: rgb(255 168 168)"><a style="color: white;" href="<?php echo $base_url;?>Courses/cpp/cpp.php">
 								<div class="product-image">
 									<center><img src="images/cpp.webp" alt="OFF-white Blue Edition" draggable="false" width=250 height=250/></center>
 								</div>
@@ -185,21 +163,19 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 										</svg>
 									</button>
 								</div>
-							</section>
+							</section></a>
 							
 							
 						</section>
 					</div>
-
-  <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
-    <div class="overlay"></div>
+          <section class="ftco-section ftco-counter img" id="section-counter" style="  background: linear-gradient(to bottom, #c054ff 0%, gold 100%);">
     <div class="container">
       <div class="row">
         <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
           <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-online"></span></div>
             <div class="text">
-              <strong class="number" data-number="400">0</strong>
+              <strong class="number" data-number="4">0</strong>
               <span>Online Courses</span>
             </div>
           </div>
@@ -208,7 +184,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
           <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-graduated"></span></div>
             <div class="text">
-              <strong class="number" data-number="4500">0</strong>
+              <strong class="number" data-number="3500">0</strong>
               <span>Students Enrolled</span>
             </div>
           </div>
@@ -217,7 +193,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
           <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-instructor"></span></div>
             <div class="text">
-              <strong class="number" data-number="1200">0</strong>
+              <strong class="number" data-number="10">0</strong>
               <span>Experts Instructors</span>
             </div>
           </div>
@@ -226,7 +202,7 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
           <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-tools"></span></div>
             <div class="text">
-              <strong class="number" data-number="300">0</strong>
+              <strong class="number" data-number="30">0</strong>
               <span>Hours Content</span>
             </div>
           </div>
@@ -268,126 +244,120 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 </main>
 
 
-  <section class="ftco-section testimony-section bg-light">
-    <div class="overlay" style="background-image: url(images/bg_2.jpg);"></div>
-    <div class="container">
-      <div class="row pb-4">
-        <div class="col-md-7 heading-section ftco-animate">
-          <span class="subheading">Testimonial</span>
-          <h2 class="mb-4">What Are Students Says</h2>
-        </div>
+<section class="ftco-section testimony-section bg-light" style="background: #fffaf2;">
+  <div class="overlay" style="background-image: url(images/bg_2.jpg);"></div>
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-md-7 heading-section ftco-animate">
+        <h2 class="mb-4">Our Team</h2>
       </div>
     </div>
-    <div class="container container-2">
-      <div class="row ftco-animate">
-        <div class="col-md-12">
-          <div class="carousel-testimony owl-carousel">
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </p>
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    <div class="pl-3">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
+  </div>
+  <div class="container container-2">
+    <div class="row ftco-animate">
+
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel">
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4"> Khushi's attention to detail and creativity enhanced our website's look and feel, matching it seamlessly to our brand identity. She also created comprehensive documentation for future reference.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/khushi.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Khushi Agarwal</p>
+                    <span class="position">Front-end Developer</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </p>
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    <div class="pl-3">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">Avinash spearheaded the development of our premium page and roadmap, demonstrating exceptional problem-solving skills and leadership. His expertise ensured seamless integration and timely delivery.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/avinash.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Avinash Badgu</p>
+                    <span class="position">Full Stack Developer</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </p>
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                    <div class="pl-3">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">Asma implemented critical features like meeting scheduling and aptitude tests with precision. Her meticulous approach to coding and collaborative spirit contributed to the application's stability</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/asma.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Asma Shaikh</p>
+                    <span class="position">Backend Developer</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </p>
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    <div class="pl-3">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">Harshad significantly enhanced our project by developing a versatile IDE and improving the dashboard experience. His innovative solutions streamlined coding processes and added immense value to user interaction.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/harshad.jpeg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Harshad Malgonde</p>
+                    <span class="position">Full Stack Developerr</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </p>
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    <div class="pl-3">
-                      <p class="name">Roger Scott</p>
-                      <span class="position">Marketing Manager</span>
-                    </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </p>
+                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Marketing Manager</span>
                   </div>
                 </div>
               </div>
@@ -396,7 +366,8 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="ftco-intro ftco-section ftco-no-pb">
  <div class="container">
@@ -414,115 +385,71 @@ include  dirname(__DIR__).'/preppros/includes/header.php';
 </section>
 
 
-<!--Premium-->
-<section id="Premium"class="ftco-section bg-light">
-<br>
-<div class="course-section__title">
-   <center><h3><b style="color: #5400ae;font-size: 30px;;">Premium</b> </h3></center> 
-  </div>
- 
-</div>
-
-  <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
-         <div class="w-100 mb-4 mb-md-0">
-            <h2 class="mb-4">Get started with a PrepPros Subscription that works for you.</h2>
-            
-            
-            <main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
-  
-                
-                
-                <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
-                  
-                  <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-                    <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
-                      
-                      <div class="ml-5">
-                        <span class="block text-2xl font-semibold"></span><b>Monthly</b></span>
-                        <span><span class="font-medium text-gray-500 text-xl align-top">&thinsp;</span><span class="text-3xl font-bold"><b>RS 1600</b> </span></span><span class="text-gray-500 font-medium">/ user</span>
-                      </div>
-                    </div>
-                    <ul class="mb-7 font-medium text-gray-500">
-                      <li class="flex text-lg mb-2">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3">one-on-one mentorship </span></span>
-                      </li>
-                      <li class="flex text-lg mb-2">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3">HR Round</span></span>
-                      </li>
-                      <li class="flex text-lg">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3"><span class="text-black">Select Questions by Company</span>
-                      </li>
-                    </ul>
-                    <div style="background-color: #5400ae;text-align-last:center;">
-                        <a href="/PrepPros/premium.php" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
-                            Subscibe
-                            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
-                          </a>
-                    </div>
-                   
-                  </div>
-                  
-                  
-                  
-                </div>
-                
-              </main>
-            <div class="d-flex video-image align-items-center mt-md-4">
-                
-               
-         </div>
-     </div>
- </div>
- <div class="col-md-6">
-     <div class="row">
-        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-          <div class="services">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tools"></span></div>
-            <div class="media-body">
-              <h3 class="heading mb-3">Top Quality Content</h3>
-              <p>Explore a personalized learning experience designed just for you.</p>
+<section class="ftco-section services-section">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+          <div class="w-100 mb-4 mb-md-0">
+            <span class="subheading">Welcome to PrepPros Premium</span>
+            <h2 class="mb-4">We Are An Online Learning and Interview Prep Center</h2>
+            <p>PrepPros is a platform to learn skills that you need for technology jobs. We help you polish your
+              skills and get ready for the job, whether you are a fresh college graduate or a working
+              professional</p>
+            <p>While the basic version helps you partially, the premium version helps you in preparing yourself
+              for your dream tech company with unlimited aptitude questions, mentorship, coding challenges, and much
+              more.
+            </p><br><br>
+            <p class="mb-0"><a href="premium.php" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
           </div>
-      </div>      
-  </div>
-  <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-      <div class="services">
-        <div class="icon icon-2 d-flex align-items-center justify-content-center"><span class="flaticon-instructor"></span></div>
-        <div class="media-body">
-          <h3 class="heading mb-3">Highly Skilled Instructor</h3>
-          <p>Receive support and guidance from experienced mentors for your success</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon d-flex align-items-center justify-content-center"> <i class="fas fa-chalkboard-user"
+                    style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">One-on-one mentorship</h3>
+                  <p>Team of highly qualified teachers and mentors to help you out. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-2 d-flex align-items-center justify-content-center"><i
+                    class="fas fa-clipboard-question" style="color: white;"></i> </div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Aptitude Questions</h3>
+                  <p>Unlimited Aptitude Questions to crack the first level of job seeking</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-3 d-flex align-items-center justify-content-center"><i
+                    class="fas fa-solid fa-code" style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Coding Preparation</h3>
+                  <p>Coding questions from top FAANG companies with live compiler and feedback</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-4 d-flex align-items-center justify-content-center"><i class="fas fa-award"
+                    style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Get Job Certified</h3>
+                  <p>With Unlimited Aptitude Questions, coding challenges, course access,etc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>    
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-  <div class="services">
-    <div class="icon icon-3 d-flex align-items-center justify-content-center"><span class="flaticon-quiz"></span></div>
-    <div class="media-body">
-      <h3 class="heading mb-3">FAANG Company Questions</h3>
-      <p>Discover companie's unique interview questions for targeted preparation.</p>
-  </div>
-</div>      
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-  <div class="services">
-    <div class="icon icon-4 d-flex align-items-center justify-content-center"><span class="flaticon-browser"></span></div>
-    <div class="media-body" >
-      <h3 class="heading mb-3">HR Round</h3>
-      <p>Evaluate your skills under our experts with our timed assessment setting</p>
-  </div>
-  
-</div>      
-</div>
-</div>
-</div>
-</div>
-</div>
-<center><p id="FAQ" class="mb-0"><a href="/PrepPros/premium.php" class="btn btn-primary px-4 py-3" >Subscibe</a></p></center>
-</section >
+    </div>
+  </section>
+
 
 <!--FAQS-->
 <section >

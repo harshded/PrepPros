@@ -213,49 +213,65 @@
 </main>
 
 
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);">
- <div class="overlay"></div>
- <div class="container">
-    <div class="row">
-       <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-         <div class="block-18 d-flex align-items-center">
+
+<section class="ftco-section ftco-counter img" id="section-counter" style="  background: linear-gradient(to bottom, #c054ff 0%, gold 100%);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 d-flex align-items-center">
             <div class="icon"><span class="flaticon-online"></span></div>
             <div class="text">
-             <strong class="number" data-number="400">0</strong>
-             <span>Online Courses</span>
-         </div>
-     </div>
- </div>
- <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-     <div class="block-18 d-flex align-items-center">
-        <div class="icon"><span class="flaticon-graduated"></span></div>
-        <div class="text">
-         <strong class="number" data-number="4500">0</strong>
-         <span>Students Enrolled</span>
-     </div>
- </div>
-</div>
-<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
- <div class="block-18 d-flex align-items-center">
-    <div class="icon"><span class="flaticon-instructor"></span></div>
-    <div class="text">
-     <strong class="number" data-number="1200">0</strong>
-     <span>Experts Instructors</span>
- </div>
-</div>
-</div>
-<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
- <div class="block-18 d-flex align-items-center">
-    <div class="icon"><span class="flaticon-tools"></span></div>
-    <div id="Instructor" class="text">
-     <strong class="number" data-number="300">0</strong>
-     <span>Hours Content</span>
- </div>
-</div>
-</div>
-</div>
-</div>
-</section>
+              <strong class="number" data-number="4">0</strong>
+              <span>Online Courses</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 d-flex align-items-center">
+            <div class="icon"><span class="flaticon-graduated"></span></div>
+            <div class="text">
+              <strong class="number" data-number="3500">0</strong>
+              <span>Students Enrolled</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 d-flex align-items-center">
+            <div class="icon"><span class="flaticon-instructor"></span></div>
+            <div class="text">
+              <strong class="number" data-number="10">0</strong>
+              <span>Experts Instructors</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 d-flex align-items-center">
+            <div class="icon"><span class="flaticon-tools"></span></div>
+            <div class="text">
+              <strong class="number" data-number="30">0</strong>
+              <span>Hours Content</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-intro ftco-section ftco-no-pb">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <div class="img" style="background-image: url(images/h1_hero.png);">
+            <div class="overlay"></div>
+            <h2>We Are PrepPros An Online Learning Center</h2>
+            <p>We can manage your dream of getting into a big tech Company</p>
+            <p class="mb-0"><a href="login&signup/register.php" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
 <!--Testimonials-->
@@ -263,136 +279,136 @@
 <div class="row justify-content-center pb-4" style="background: #fffaf2;width:100%;">
   <div class="col-md-12 heading-section text-center ftco-animate">
     <br>
-    <h3><b style="color: #ae5e00;font-size: 30px;;">Testimonials</b> </h3>
+    <!-- <h3><b style="color: #ae5e00;font-size: 30px;;">Testimonials</b> </h3> -->
   </div>
   <hr style="width:8px;border-top-color:#eb9e22;border-top: 0.8rem solid #ffe6bd; border-right: 21rem solid transparent;">
 </div>
 </div>
 
 
-<section  class="ftco-section testimony-section bg-light" style="background: #fffaf2;">
-   <div class="overlay" style="background-image: url(images/bg_2.jpg);"></div>
-   <div class="container">
+<section class="ftco-section testimony-section bg-light" style="background: #fffaf2;">
+  <div class="overlay" style="background-image: url(images/bg_2.jpg);"></div>
+  <div class="container">
     <div class="row pb-4">
       <div class="col-md-7 heading-section ftco-animate">
-         <h2 class="mb-4">What Our Mentors Says</h2>
-     </div>
- </div>
-</div>
-<div class="container container-2">
+        <h2 class="mb-4">Our Team</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container container-2">
     <div class="row ftco-animate">
-      
+
       <div class="col-md-12">
         <div class="carousel-testimony owl-carousel">
           <div class="item">
             <div class="testimony-wrap py-4">
               <div class="text">
-                 <p class="star">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                <!-- <p class="star"> -->
+                  <!-- <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span> -->
+                </p>
+                <p class="mb-4"> Khushi's attention to detail and creativity enhanced our website's look and feel, matching it seamlessly to our brand identity. She also created comprehensive documentation for future reference.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/khushi.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Khushi Agarwal</p>
+                    <span class="position">Front-end Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <!-- <p class="star"> -->
+                  <!-- <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span> -->
+                </p>
+                <p class="mb-4">Avinash spearheaded the development of our premium page and roadmap, demonstrating exceptional problem-solving skills and leadership. His expertise ensured seamless integration and timely delivery.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/Avinash.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Avinash Badgu</p>
+                    <span class="position">Full Stack Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <!-- <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span> -->
+                </p>
+                <p class="mb-4">Asma implemented critical features like meeting scheduling and aptitude tests with precision. Her meticulous approach to coding and collaborative spirit contributed to the application's stability</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/asma.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Asma Shaikh</p>
+                    <span class="position">Backend Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <!-- <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span> -->
+                </p>
+                <p class="mb-4">Harshad significantly enhanced our project by developing a versatile IDE and improving the dashboard experience. His innovative solutions streamlined coding processes and added immense value to user interaction.</p>
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url(images/harshad.jpeg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Harshad Malgonde</p>
+                    <span class="position">Full Stack Developerr</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <!-- <p class="star">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span> -->
                 </p>
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <div class="d-flex align-items-center">
-                   <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                   <div class="pl-3">
-                      <p class="name">Manjusha Wadekar</p>
-                      <span class="position">Research</span>
+                  <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                  <div class="pl-3">
+                    <p class="name">Roger Scott</p>
+                    <span class="position">Marketing Manager</span>
                   </div>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
+    </div>
   </div>
-  <div class="item">
-    <div class="testimony-wrap py-4">
-      <div class="text">
-         <p class="star">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        </p>
-        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        <div class="d-flex align-items-center">
-           <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-           <div class="pl-3">
-              <p class="name">Amruta Jog</p>
-              <span class="position">Cyber Security</span>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-<div class="item">
-    <div class="testimony-wrap py-4">
-      <div class="text">
-         <p class="star">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        </p>
-        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        <div class="d-flex align-items-center">
-           <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-           <div class="pl-3">
-              <p class="name">Vinaya Hasamnis</p>
-              <span class="position">Database Manager</span>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-<div class="item">
-    <div class="testimony-wrap py-4">
-      <div class="text">
-         <p class="star">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        </p>
-        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        <div class="d-flex align-items-center">
-           <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-           <div class="pl-3">
-              <p class="name">Bharti Upadhyee</p>
-              <span class="position">Marketing Manager</span>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-<div class="item">
-    <div class="testimony-wrap py-4">
-      <div class="text">
-         <p class="star">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-        </p>
-        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        <div class="d-flex align-items-center">
-           <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-           <div class="pl-3">
-              <p class="name">Roger Scott</p>
-              <span class="position">Marketing Manager</span>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
 <section class="ftco-intro ftco-section ftco-no-pb">
@@ -412,114 +428,70 @@
 
 
 <!--Premium-->
-<section id="Premium"class="ftco-section bg-light">
-<br>
-<div class="course-section__title">
-   <center><h3><b style="color: #5400ae;font-size: 30px;;">Premium</b> </h3></center> 
-  </div>
-  <hr style="width:8px;border-top-color:#22caeb;border-top: 0.8rem solid #cdbdff; border-right: 21rem solid transparent;">
-</div>
-
-  <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
-         <div class="w-100 mb-4 mb-md-0">
-            <h2 class="mb-4">Get started with a PrepPros Subscription that works for you.</h2>
-            
-            
-            <main class="max-w-6xl mx-auto pt-10 pb-36 px-8">
-  
-                
-                
-                <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
-                  
-                  <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-                    <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
-                      
-                      <div class="ml-5">
-                        <span class="block text-2xl font-semibold"></span><b>Monthly</b></span>
-                        <span><span class="font-medium text-gray-500 text-xl align-top">&thinsp;</span><span class="text-3xl font-bold"><b>RS 1600</b> </span></span><span class="text-gray-500 font-medium">/ user</span>
-                      </div>
-                    </div>
-                    <ul class="mb-7 font-medium text-gray-500">
-                      <li class="flex text-lg mb-2">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3">one-on-one mentorship </span></span>
-                      </li>
-                      <li class="flex text-lg mb-2">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3">HR Round</span></span>
-                      </li>
-                      <li class="flex text-lg">
-                        <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                        <span class="ml-3"><span class="text-black">Select Questions by Company</span>
-                      </li>
-                    </ul>
-                    <div style="background-color: #5400ae;text-align-last:center;">
-                        <a href="#/" class="flex justify-center items-center bg-indigo-600 rounded-xl py-5 px-4 text-center text-white text-xl">
-                            Subscibe
-                            <img src="https://res.cloudinary.com/williamsondesign/arrow-right.svg" class="ml-2" />
-                          </a>
-                    </div>
-                   
-                  </div>
-                  
-                  
-                  
-                </div>
-                
-              </main>
-            <div class="d-flex video-image align-items-center mt-md-4">
-                
-               
-         </div>
-     </div>
- </div>
- <div class="col-md-6">
-     <div class="row">
-        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-          <div class="services">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tools"></span></div>
-            <div class="media-body">
-              <h3 class="heading mb-3">Top Quality Content</h3>
-              <p>Explore a personalized learning experience designed just for you.</p>
+<section class="ftco-section services-section">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+          <div class="w-100 mb-4 mb-md-0">
+            <span class="subheading">Welcome to PrepPros Premium</span>
+            <h2 class="mb-4">We Are An Online Learning and Interview Prep Center</h2>
+            <p>PrepPros is a platform to learn skills that you need for technology jobs. We help you polish your
+              skills and get ready for the job, whether you are a fresh college graduate or a working
+              professional</p>
+            <p>While the basic version helps you partially, the premium version helps you in preparing yourself
+              for your dream tech company with unlimited aptitude questions, mentorship, coding challenges, and much
+              more.
+            </p><br><br>
+            <p class="mb-0"><a href="premium.php" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
           </div>
-      </div>      
-  </div>
-  <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-      <div class="services">
-        <div class="icon icon-2 d-flex align-items-center justify-content-center"><span class="flaticon-instructor"></span></div>
-        <div class="media-body">
-          <h3 class="heading mb-3">Highly Skilled Instructor</h3>
-          <p>Receive support and guidance from experienced mentors for your success</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon d-flex align-items-center justify-content-center"> <i class="fas fa-chalkboard-user"
+                    style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">One-on-one mentorship</h3>
+                  <p>Team of highly qualified teachers and mentors to help you out. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-2 d-flex align-items-center justify-content-center"><i
+                    class="fas fa-clipboard-question" style="color: white;"></i> </div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Aptitude Questions</h3>
+                  <p>Unlimited Aptitude Questions to crack the first level of job seeking</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-3 d-flex align-items-center justify-content-center"><i
+                    class="fas fa-solid fa-code" style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Coding Preparation</h3>
+                  <p>Coding questions from top FAANG companies with live compiler and feedback</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+              <div class="services">
+                <div class="icon icon-4 d-flex align-items-center justify-content-center"><i class="fas fa-award"
+                    style="color: white;"></i></div>
+                <div class="media-body">
+                  <h3 class="heading mb-3">Get Job Certified</h3>
+                  <p>With Unlimited Aptitude Questions, coding challenges, course access,etc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>    
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-  <div class="services">
-    <div class="icon icon-3 d-flex align-items-center justify-content-center"><span class="flaticon-quiz"></span></div>
-    <div class="media-body">
-      <h3 class="heading mb-3">FAANG Company Questions</h3>
-      <p>Discover companie's unique interview questions for targeted preparation.</p>
-  </div>
-</div>      
-</div>
-<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-  <div class="services">
-    <div class="icon icon-4 d-flex align-items-center justify-content-center"><span class="flaticon-browser"></span></div>
-    <div class="media-body" >
-      <h3 class="heading mb-3">HR Round</h3>
-      <p>Evaluate your skills under our experts with our timed assessment setting</p>
-  </div>
-  
-</div>      
-</div>
-</div>
-</div>
-</div>
-</div>
-<center><p id="FAQ" class="mb-0"><a href="#" class="btn btn-primary px-4 py-3" >Subscibe</a></p></center>
-</section >
+    </div>
+  </section>
 
 <!--FAQS-->
 <section >
